@@ -22,7 +22,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material
+        run: pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 
       - name: Build the site
         run: mkdocs build
