@@ -1,5 +1,5 @@
 site_name: doggAI
-site_description: 打造自架 AI 平台 - 穩健可靠、可愛溫馨的學習旅程
+site_description: 30 天打造自架 AI 平台 - 穩健可靠、可愛溫馨的學習旅程
 site_url: https://oldgi.github.io/doggAI/
 repo_url: https://github.com/oldgi/doggAI
 repo_name: oldgi/doggAI
@@ -7,12 +7,12 @@ repo_name: oldgi/doggAI
 theme:
   name: material
   language: zh-TW
-  favicon: images/favicon.ico  # 可日後加入圖示
-  logo: assets/logo.svg        # 可日後自製 SVG logo
+  favicon: images/favicon.ico
+  logo: assets/logo.svg
   palette:
     - scheme: default
-      primary: teal       # 主色（溫和穩定）
-      accent: orange      # 點綴（活力可愛）
+      primary: teal
+      accent: orange
       toggle:
         icon: material/weather-night
         name: 切換為深色模式
@@ -26,11 +26,11 @@ theme:
     text: Noto Sans TC
     code: JetBrains Mono
   icon:
-    logo: material/paw  # 可改為 dog icon 或自訂
+    logo: material/paw
   features:
     - navigation.tabs
-    - navigation.top
     - navigation.instant
+    - navigation.top
     - navigation.footer
     - content.code.annotate
     - content.code.copy
@@ -40,10 +40,7 @@ theme:
 
 nav:
   - 🏠 首頁: index.md
-  - 📅 30 天實作旅程:
-      - 📅 Day 1: day1.md
-      # - ☁️ Day 2: day2.md
-      # 可逐日新增
+  - 📅 每日實作日誌: logs/
 
 markdown_extensions:
   - admonition
@@ -59,4 +56,8 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materi_
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - awesome-pages
