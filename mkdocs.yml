@@ -1,0 +1,21 @@
+site_name: doggAI
+site_description: 30 天打造自架 AI 平台 - 穩健可靠、可愛溫馨的學習旅程
+site_url: https://oldgi.github.io/doggAI/
+theme:
+  name: material
+  palette:
+    primary: deep orange
+    accent: deep purple
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: fontawesome/solid/dog
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+nav:
+  - 🏠 首頁: index.md
+  - 📅 Day 1: day1.md
