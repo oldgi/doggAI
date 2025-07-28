@@ -20,7 +20,7 @@
     
     
       
-        <title>📅 Day 1：準備啟程 - doggAI</title>
+        <title>Day1 - doggAI</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#day-1" class="md-skip">
+        <a href="#20250726-llm" class="md-skip">
           跳轉到
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📅 Day 1：準備啟程
+              Day1
             
           </span>
         </div>
@@ -367,7 +367,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 今日目標
+      📋 今日目標
     </span>
   </a>
   
@@ -376,16 +376,88 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ 今日紀錄
+      🗣️ 討論歷程與決策
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🗣️ 討論歷程與決策">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 硬體配置討論
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🔮 明日預告
+      💻 實際操作記錄
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 實際操作記錄">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: 環境檢查與準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      關鍵發現
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 建立的工具與腳本
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ 建立的工具與腳本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. GPU 監控腳本
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      -
     </span>
   </a>
   
@@ -415,18 +487,253 @@
   
 
 
-<h1 id="day-1">📅 Day 1：準備啟程</h1>
-<h2 id="_1">🎯 今日目標</h2>
 <ul>
-<li>建立 doggAI 專案架構</li>
-<li>安裝 MkDocs 與主題</li>
-<li>發佈第一版網站</li>
+<li>
+<h1 id="20250726-llm">2025/07/26 本地 LLM 部署完整記錄</h1>
+</li>
+<li>
+<h2 id="_1">📋 今日目標</h2>
+</li>
 </ul>
-<h2 id="_2">🛠️ 今日紀錄</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-awesome-pages-plugin
+<p>建立本地端 LLM 環境，測試 API 功能，並建立完整的效能監控系統。  </p>
+<hr />
+<ul>
+<li>
+<h2 id="_2">🗣️ 討論歷程與決策</h2>
+</li>
+<li>
+<h3 id="1">1. 硬體配置討論</h3>
+</li>
+</ul>
+<p><strong>你的問題</strong>: 建置本地端 LLM 需要什麼硬體規格？<br />
+<strong>我的建議</strong>: 提供了入門級、中階級、高階級三種配置方案<br />
+<strong>你的決定</strong>:<br />
+- 初始考慮：舊桌機 (i7-8700 + 32GB RAM + Intel UHD 128MB)
+- <strong>最終選擇</strong>: 筆電 (i9-13900H + 32GB DDR5 + RTX 4070 8GB) ✅
+- ### 2. 作業系統選擇討論</p>
+<p><strong>討論重點</strong>: Ubuntu Server vs Desktop，22.04 vs 24.04 vs 25.04<br />
+<strong>你的決定</strong>: Ubuntu 24.04 LTS Desktop<br />
+<strong>理由</strong>: 需要圖形界面測試 API，長期支援到 2029年<br />
+- ### 3. LLM 管理工具選擇</p>
+<p><strong>我提供的選項</strong>: Ollama, LM Studio, Text Gen WebUI, vLLM, llama.cpp<br />
+<strong>你的決定</strong>: 主要使用 <strong>Ollama</strong><br />
+<strong>理由</strong>: 平衡易用性和功能性<br />
+- ### 4. 系統架構確認</p>
+<p><strong>發現</strong>: 你已有 Windows 11 + WSL2 Ubuntu 環境<br />
+<strong>決定</strong>: 使用現有的 WSL2 環境，不需要重新安裝  </p>
+<hr />
+<ul>
+<li>
+<h2 id="_3">💻 實際操作記錄</h2>
+</li>
+<li>
+<h3 id="phase-1">Phase 1: 環境檢查與準備</h3>
+</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a># 確認 WSL2 版本
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>wsl --version  # 結果：2.5.9.0 ✅
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a># 確認 CUDA 環境
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>nvcc --version  # 結果：CUDA 12.6 ✅
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>nvidia-smi     # 結果：RTX 4070 正常識別 ✅
 </code></pre></div></td></tr></table></div>
-<h2 id="_3">🔮 明日預告</h2>
-<p>硬體資源選型與 GPU 架構選擇策略。</p>
+- ### Phase 2: 遇到的困難與解決</p>
+<p><strong>問題 1</strong>: 忘記 sudo 密碼<br />
+<strong>解決方案</strong>:  </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>wsl -u root
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>passwd your_username  # 重設密碼成功 ✅
+</code></pre></div></td></tr></table></div>
+<p><strong>問題 2</strong>: NVIDIA Container Toolkit 安裝警告<br />
+<strong>現象</strong>: "apt-key is deprecated" 警告<br />
+<strong>解決</strong>: 確認這是正常警告，功能正常  </p>
+<p><strong>問題 3</strong>: nvtop 無法識別 GPU<br />
+<strong>解決</strong>: 改用自製的 <code>gpu_monitor.sh</code> 腳本  </p>
+<p><strong>問題 4</strong>: Ollama port 衝突<br />
+<strong>現象</strong>: "bind: address already in use"<br />
+<strong>解決</strong>: 發現 Ollama 已在運行，直接使用現有服務<br />
+- ### Phase 3: 模型測試與效能驗證</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a># 安裝 Ollama (成功)
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>curl -fsSL https://ollama.ai/install.sh | sh
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a># 下載模型
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>ollama pull llama2:7b    # 約 4GB，下載成功
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>ollama pull qwen2.5:7b   # 中文模型，下載成功
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a># 基本測試
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>ollama run llama2:7b &quot;Hello, tell me about yourself&quot;  # 成功運行
+</code></pre></div></td></tr></table></div>
+<hr />
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>- ## 📊 效能測試結果
+- ### 硬體表現統計
+
+  | 測試項目 | 結果 | GPU使用率 | GPU記憶體 | 溫度 | 功耗 |
+  |---|---|---|---|---|---|
+  | 基本對話 | 7.07秒 | 95% | 78.3% | 55°C | 45W |
+  | 串流回應 | 13.76秒 | 96% | 78.3% | 55°C | 41W |
+  | REST API | 4.65秒 | 95% | 78.4% | 55°C | 43.5W |
+  | 簡單問答 | 2.63秒 | 96% | 78.4% | 55°C | 30.4W |
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>
+<h3 id="_4">關鍵發現</h3>
+</li>
+<li><strong>溫度控制優秀</strong>: 最高僅 55°C，散熱餘裕大</li>
+<li><strong>GPU 利用率完美</strong>: 95-96%，完全發揮硬體效能</li>
+<li><strong>功耗合理</strong>: 30-45W，相當節能</li>
+<li><strong>回應速度理想</strong>: 2-14秒範圍，符合預期</li>
+</ul>
+<hr />
+<ul>
+<li>
+<h2 id="_5">🛠️ 建立的工具與腳本</h2>
+</li>
+<li>
+<h3 id="1-gpu">1. GPU 監控腳本</h3>
+</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>~/gpu_monitor.sh  # 即時監控 GPU 狀態
+</code></pre></div></td></tr></table></div>
+- ### 2. 系統監控腳本</p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>~/monitor_system.sh  # 綜合系統資源監控
+</code></pre></div></td></tr></table></div>
+- ### 3. API 測試腳本
+- <code>~/test_api.py</code> - 基本 API 測試
+- <code>~/test_streaming.py</code> - 串流回應測試
+- <code>~/performance_test.py</code> - 效能基準測試
+- ### 4. 自動化測試框架 ⭐</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>~/auto_test_framework.py  # 完整的自動化測試與記錄系統
+</code></pre></div></td></tr></table></div>
+<p><strong>功能</strong>:<br />
+    - 自動執行多項測試
+    - 記錄 GPU/系統狀態
+    - 生成 JSON 格式詳細記錄
+    - 提供測試摘要報告</p>
+<hr />
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code>- ## 🎯 達成的里程碑
+- ### ✅ 環境建置完成
+- WSL2 + Ubuntu 24.04 LTS 環境就緒
+- NVIDIA GPU 驅動 + CUDA 12.6 正常運作
+- Ollama LLM 管理系統安裝完成
+- ### ✅ 模型測試成功
+- Llama2 7B 模型正常運行
+- Qwen2.5 7B 中文模型正常運行
+- API 功能測試通過
+- ### ✅ 監控系統建立
+- 即時 GPU 監控
+- 效能數據自動記錄
+- 完整的測試框架
+- ### ✅ 效能驗證完成
+- RTX 4070 效能完全發揮
+- 溫度控制在理想範圍
+- 回應速度符合預期
+</code></pre></div></td></tr></table></div>
+<hr />
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code>- ## 🔮 下次可以繼續的方向
+- ### 1. 模型探索
+    - 測試 13B 更大模型
+    - 嘗試程式碼生成模型 (CodeLlama)
+    - 測試多模態模型 (LLaVA)
+- ### 2. 應用開發
+    - 建立 Web UI 界面
+    - 開發 Python API 客戶端
+    - 整合 FastAPI 後端服務
+- ### 3. 效能優化
+    - 並行處理測試
+    - 記憶體使用優化
+    - 量化模型測試
+- ### 4. 生產環境準備
+    - Docker 容器化
+    - 負載測試
+    - 監控系統完善
+</code></pre></div></td></tr></table></div>
+<h2 id="-">-</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>- ## 📈 總結評價
+
+  **今日成就等級**: 🏆 **專業級**
+
+  **效能評分**:  
+    - GPU 利用率: A+ (95-96%)
+    - 散熱控制: A+ (55°C)
+    - 回應速度: A (2-14秒)
+    - 功耗效率: A+ (30-45W)
+    - 系統穩定性: A+ (無當機或錯誤)
+
+      **你的 RTX 4070 + WSL2 組合表現超出預期，完全具備了運行本地 LLM 的專業級能力！** 🚀
+</code></pre></div></td></tr></table></div>
+<hr />
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>      *記錄時間: 2025/07/26 完成*  
+      *下次繼續: 根據需求選擇上述任一方向深入探索*
+
+      &lt;!--EndFragment--&gt;
+</code></pre></div></td></tr></table></div>
 
 
 

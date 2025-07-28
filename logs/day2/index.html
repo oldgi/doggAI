@@ -1,0 +1,2525 @@
+
+<!doctype html>
+<html lang="zh-TW" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="30 天打造自架 AI 平台 - 穩健可靠、可愛溫馨的學習旅程">
+      
+      
+      
+        <link rel="canonical" href="https://oldgi.github.io/doggAI/logs/day2/">
+      
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Day2 - doggAI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans TC";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#20250726" class="md-skip">
+          跳轉到
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="頁首">
+    <a href="../.." title="doggAI" class="md-header__button md-logo" aria-label="doggAI" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            doggAI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Day2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="切換為深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切換為深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="切換為亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切換為亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜尋" placeholder="搜尋" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="搜尋">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清除" aria-label="清除" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜尋引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oldgi/doggAI" title="前往倉庫" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oldgi/doggAI
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="標籤" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏠 首頁
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📅 每日實作日誌
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="導覽列" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="doggAI" class="md-nav__button md-logo" aria-label="doggAI" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    doggAI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oldgi/doggAI" title="前往倉庫" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oldgi/doggAI
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏠 首頁
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📅 每日實作日誌
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目錄">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目錄
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a1-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      A1. GPU 監控腳本
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A1. GPU 監控腳本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpu_monitorsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      gpu_monitor.sh
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 使用說明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 使用說明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      依賴套件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a7" class="md-nav__link">
+    <span class="md-ellipsis">
+      A7. 額外實用腳本
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A7. 額外實用腳本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick_testpy-" class="md-nav__link">
+    <span class="md-ellipsis">
+      quick_test.py - 快速測試腳本
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 腳本使用範例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 腳本使用範例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      日常使用工作流
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 總結
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/oldgi/doggAI/edit/master/docs/logs/day2.md" title="編輯此頁" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<ul>
+<li>
+<h1 id="20250726">📂 20250726附錄：測試程式碼集合</h1>
+</li>
+<li>
+<h2 id="a1-gpu">A1. GPU 監控腳本</h2>
+</li>
+<li>
+<h3 id="gpu_monitorsh"><code>gpu_monitor.sh</code></h3>
+</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>#!/bin/bash
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>while true; do
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>  clear
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>  echo &quot;=== GPU 監控 (按 Ctrl+C 停止) ===&quot;
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>  echo &quot;時間: $(date)&quot;
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>  echo &quot;&quot;
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>  # GPU 基本資訊
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>  nvidia-smi --query-gpu=name,memory.used,memory.total,utilization.gpu,temperature.gpu,power.draw --format=csv,noheader,nounits | \
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>  awk -F&#39;, &#39; &#39;{
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>      printf &quot;GPU: %s\n&quot;, $1
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>      printf &quot;記憶體: %s MB / %s MB (%.1f%%)\n&quot;, $2, $3, ($2/$3)*100
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>      printf &quot;使用率: %s%%\n&quot;, $4
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>      printf &quot;溫度: %s°C\n&quot;, $5
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>      printf &quot;功耗: %s W\n&quot;, $6
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>  }&#39;
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>  echo &quot;&quot;
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>  echo &quot;執行中的 GPU 程序:&quot;
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>  nvidia-smi --query-compute-apps=pid,process_name,used_memory --format=csv,noheader,nounits 2&gt;/dev/null || echo &quot;無 GPU 程序運行&quot;
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>  sleep 2
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>done
+</code></pre></div></td></tr></table></div>
+- ## A2. 系統監控腳本
+- ### <code>monitor_system.sh</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>#!/bin/bash
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>echo &quot;=== 系統資源監控 ===&quot;
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>echo &quot;時間: $(date)&quot;
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>echo &quot;&quot;
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>echo &quot;1. 記憶體使用狀況:&quot;
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>free -h
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>echo &quot;&quot;
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>echo &quot;2. 磁碟使用狀況:&quot;
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a>df -h | grep -E &quot;(根目錄|/dev/)&quot;
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>echo &quot;&quot;
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a>echo &quot;3. CPU 負載:&quot;
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a>uptime
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a>echo &quot;&quot;
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a>echo &quot;4. GPU 狀況:&quot;
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a>nvidia-smi --query-gpu=name,memory.used,memory.total,utilization.gpu,temperature.gpu,power.draw --format=csv,noheader,nounits
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a>echo &quot;&quot;
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a>echo &quot;5. 前 10 個消耗記憶體的程序:&quot;
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a>ps aux --sort=-%mem | head -11
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a>echo &quot;&quot;
+</code></pre></div></td></tr></table></div>
+- ## A3. API 測試腳本
+- ### <code>test_api.py</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>import ollama
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>import time
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>def test_performance():
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>  print(&quot;開始測試 Ollama API...&quot;)
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>  start_time = time.time()
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>  response = ollama.chat(model=&#39;llama2:7b&#39;, messages=[
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>      {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: &#39;Count from 1 to 5 and briefly explain each number&#39;}
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>  ])
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>  end_time = time.time()
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>  print(f&quot;回應時間: {end_time - start_time:.2f} 秒&quot;)
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>  print(&quot;=&quot;*50)
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a>  print(&quot;完整回應內容:&quot;)
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a>  print(response[&#39;message&#39;][&#39;content&#39;])
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>  print(&quot;=&quot;*50)
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a>  test_performance()
+</code></pre></div></td></tr></table></div>
+- ### <code>test_streaming.py</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span>
+<span class="normal"><a href="#__codelineno-3-32">32</a></span>
+<span class="normal"><a href="#__codelineno-3-33">33</a></span>
+<span class="normal"><a href="#__codelineno-3-34">34</a></span>
+<span class="normal"><a href="#__codelineno-3-35">35</a></span>
+<span class="normal"><a href="#__codelineno-3-36">36</a></span>
+<span class="normal"><a href="#__codelineno-3-37">37</a></span>
+<span class="normal"><a href="#__codelineno-3-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>import ollama
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>import time
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>def test_streaming():
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  print(&quot;測試串流回應...&quot;)
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>  start_time = time.time()
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>  stream = ollama.chat(
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>      model=&#39;llama2:7b&#39;,
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>      messages=[{&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: &#39;Tell me a short story about a robot&#39;}],
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>      stream=True,
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>  )
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>  print(&quot;串流回應開始:&quot;)
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a>  print(&quot;-&quot; * 30)
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>  for chunk in stream:
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>      content = chunk[&#39;message&#39;][&#39;content&#39;]
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a>      print(content, end=&#39;&#39;, flush=True)
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a>
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a>  end_time = time.time()
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a>  print(f&quot;\n-&quot; * 30)
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a>  print(f&quot;總時間: {end_time - start_time:.2f} 秒&quot;)
+<a id="__codelineno-3-24" name="__codelineno-3-24"></a>
+<a id="__codelineno-3-25" name="__codelineno-3-25"></a>def test_direct_api():
+<a id="__codelineno-3-26" name="__codelineno-3-26"></a>  print(&quot;\n測試直接 API 呼叫...&quot;)
+<a id="__codelineno-3-27" name="__codelineno-3-27"></a>
+<a id="__codelineno-3-28" name="__codelineno-3-28"></a>  response = ollama.generate(
+<a id="__codelineno-3-29" name="__codelineno-3-29"></a>      model=&#39;llama2:7b&#39;,
+<a id="__codelineno-3-30" name="__codelineno-3-30"></a>      prompt=&#39;What are the 3 primary colors?&#39;
+<a id="__codelineno-3-31" name="__codelineno-3-31"></a>  )
+<a id="__codelineno-3-32" name="__codelineno-3-32"></a>
+<a id="__codelineno-3-33" name="__codelineno-3-33"></a>  print(&quot;直接 API 回應:&quot;)
+<a id="__codelineno-3-34" name="__codelineno-3-34"></a>  print(response[&#39;response&#39;])
+<a id="__codelineno-3-35" name="__codelineno-3-35"></a>
+<a id="__codelineno-3-36" name="__codelineno-3-36"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-3-37" name="__codelineno-3-37"></a>  test_streaming()
+<a id="__codelineno-3-38" name="__codelineno-3-38"></a>  test_direct_api()
+</code></pre></div></td></tr></table></div>
+- ### <code>performance_test.py</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span>
+<span class="normal"><a href="#__codelineno-4-30">30</a></span>
+<span class="normal"><a href="#__codelineno-4-31">31</a></span>
+<span class="normal"><a href="#__codelineno-4-32">32</a></span>
+<span class="normal"><a href="#__codelineno-4-33">33</a></span>
+<span class="normal"><a href="#__codelineno-4-34">34</a></span>
+<span class="normal"><a href="#__codelineno-4-35">35</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>import ollama
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>import time
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>import json
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>def detailed_performance_test():
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>  tests = [
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>      &quot;What is 2+2?&quot;,
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>      &quot;Name 3 colors&quot;,
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>      &quot;Write a haiku about computers&quot;,
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>      &quot;Explain photosynthesis in one sentence&quot;
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>  ]
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a>  print(&quot;詳細效能測試開始...&quot;)
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a>  print(&quot;=&quot;*60)
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a>  for i, prompt in enumerate(tests, 1):
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a>      print(f&quot;\n測試 {i}: {prompt}&quot;)
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a>      print(&quot;-&quot; * 40)
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a>      start_time = time.time()
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a>      response = ollama.chat(model=&#39;llama2:7b&#39;, messages=[
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a>          {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a>      ])
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a>      end_time = time.time()
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a>      response_time = end_time - start_time
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a>      response_text = response[&#39;message&#39;][&#39;content&#39;]
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a>
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a>      print(f&quot;回應時間: {response_time:.2f} 秒&quot;)
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a>      print(f&quot;回應長度: {len(response_text)} 字元&quot;)
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a>      print(f&quot;回應內容: {response_text}&quot;)
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a>      print(f&quot;平均速度: {len(response_text)/response_time:.1f} 字元/秒&quot;)
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-4-35" name="__codelineno-4-35"></a>  detailed_performance_test()
+</code></pre></div></td></tr></table></div>
+- ## A4. 進階測試腳本
+- ### <code>conversation_test.py</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>import ollama
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>import time
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a>def test_conversation():
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a>  print(&quot;測試連續對話效能...&quot;)
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a>  # 第一次對話（模型載入）
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>  start_time = time.time()
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a>  response1 = ollama.chat(model=&#39;llama2:7b&#39;, messages=[
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a>      {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: &#39;Hello, what is your name?&#39;}
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a>  ])
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a>  time1 = time.time() - start_time
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a>  # 第二次對話（模型已載入）
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a>  start_time = time.time()
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a>  response2 = ollama.chat(model=&#39;llama2:7b&#39;, messages=[
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a>      {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: &#39;What is 5 + 3?&#39;}
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a>  ])
+<a id="__codelineno-5-19" name="__codelineno-5-19"></a>  time2 = time.time() - start_time
+<a id="__codelineno-5-20" name="__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21"></a>  print(f&quot;第一次回應時間: {time1:.2f} 秒&quot;)
+<a id="__codelineno-5-22" name="__codelineno-5-22"></a>  print(f&quot;第二次回應時間: {time2:.2f} 秒&quot;)
+<a id="__codelineno-5-23" name="__codelineno-5-23"></a>  print(f&quot;效能提升: {((time1-time2)/time1*100):.1f}%&quot;)
+<a id="__codelineno-5-24" name="__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25"></a>  print(&quot;\n第一次回應:&quot;, response1[&#39;message&#39;][&#39;content&#39;][:100] + &quot;...&quot;)
+<a id="__codelineno-5-26" name="__codelineno-5-26"></a>  print(&quot;第二次回應:&quot;, response2[&#39;message&#39;][&#39;content&#39;])
+<a id="__codelineno-5-27" name="__codelineno-5-27"></a>
+<a id="__codelineno-5-28" name="__codelineno-5-28"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-5-29" name="__codelineno-5-29"></a>  test_conversation()
+</code></pre></div></td></tr></table></div>
+- ### <code>model_comparison.py</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span>
+<span class="normal"><a href="#__codelineno-6-16">16</a></span>
+<span class="normal"><a href="#__codelineno-6-17">17</a></span>
+<span class="normal"><a href="#__codelineno-6-18">18</a></span>
+<span class="normal"><a href="#__codelineno-6-19">19</a></span>
+<span class="normal"><a href="#__codelineno-6-20">20</a></span>
+<span class="normal"><a href="#__codelineno-6-21">21</a></span>
+<span class="normal"><a href="#__codelineno-6-22">22</a></span>
+<span class="normal"><a href="#__codelineno-6-23">23</a></span>
+<span class="normal"><a href="#__codelineno-6-24">24</a></span>
+<span class="normal"><a href="#__codelineno-6-25">25</a></span>
+<span class="normal"><a href="#__codelineno-6-26">26</a></span>
+<span class="normal"><a href="#__codelineno-6-27">27</a></span>
+<span class="normal"><a href="#__codelineno-6-28">28</a></span>
+<span class="normal"><a href="#__codelineno-6-29">29</a></span>
+<span class="normal"><a href="#__codelineno-6-30">30</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>import ollama
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>import time
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>def compare_models():
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a>  models = [&#39;llama2:7b&#39;, &#39;qwen2.5:7b&#39;]
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a>  prompt = &quot;What is machine learning?&quot;
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a>  print(&quot;模型效能比較測試...&quot;)
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a>  print(&quot;=&quot;*50)
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a>  for model in models:
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a>      try:
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a>          print(f&quot;\n測試模型: {model}&quot;)
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a>          start_time = time.time()
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a>          response = ollama.chat(model=model, messages=[
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a>              {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}
+<a id="__codelineno-6-18" name="__codelineno-6-18"></a>          ])
+<a id="__codelineno-6-19" name="__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20"></a>          end_time = time.time()
+<a id="__codelineno-6-21" name="__codelineno-6-21"></a>          response_time = end_time - start_time
+<a id="__codelineno-6-22" name="__codelineno-6-22"></a>
+<a id="__codelineno-6-23" name="__codelineno-6-23"></a>          print(f&quot;回應時間: {response_time:.2f} 秒&quot;)
+<a id="__codelineno-6-24" name="__codelineno-6-24"></a>          print(f&quot;回應預覽: {response[&#39;message&#39;][&#39;content&#39;][:150]}...&quot;)
+<a id="__codelineno-6-25" name="__codelineno-6-25"></a>
+<a id="__codelineno-6-26" name="__codelineno-6-26"></a>      except Exception as e:
+<a id="__codelineno-6-27" name="__codelineno-6-27"></a>          print(f&quot;模型 {model} 測試失敗: {e}&quot;)
+<a id="__codelineno-6-28" name="__codelineno-6-28"></a>
+<a id="__codelineno-6-29" name="__codelineno-6-29"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-6-30" name="__codelineno-6-30"></a>  compare_models()
+</code></pre></div></td></tr></table></div>
+- ## A5. 自動化測試框架
+- ### <code>auto_test_framework.py</code></p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-7-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-7-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-7-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-7-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-7-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-7-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-7-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-7-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-7-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-7-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-7-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-7-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-7-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-7-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-7-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-7-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-7-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-7-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-7-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-7-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-7-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-7-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-7-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-7-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-7-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-7-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-7-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-7-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-7-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-7-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-7-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-7-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-7-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-7-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-7-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-7-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-7-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-7-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-7-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-7-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-7-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-7-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-7-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-7-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-7-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-7-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-7-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-7-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-7-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-7-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-7-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-7-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-7-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-7-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-7-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-7-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-7-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-7-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-7-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-7-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-7-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-7-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-7-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-7-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-7-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-7-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-7-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-7-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-7-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-7-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-7-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-7-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-7-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-7-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-7-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-7-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-7-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-7-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-7-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-7-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-7-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-7-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-7-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-7-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-7-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-7-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-7-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-7-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-7-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-7-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-7-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-7-100">100</a></span>
+<span class="normal"><a href="#__codelineno-7-101">101</a></span>
+<span class="normal"><a href="#__codelineno-7-102">102</a></span>
+<span class="normal"><a href="#__codelineno-7-103">103</a></span>
+<span class="normal"><a href="#__codelineno-7-104">104</a></span>
+<span class="normal"><a href="#__codelineno-7-105">105</a></span>
+<span class="normal"><a href="#__codelineno-7-106">106</a></span>
+<span class="normal"><a href="#__codelineno-7-107">107</a></span>
+<span class="normal"><a href="#__codelineno-7-108">108</a></span>
+<span class="normal"><a href="#__codelineno-7-109">109</a></span>
+<span class="normal"><a href="#__codelineno-7-110">110</a></span>
+<span class="normal"><a href="#__codelineno-7-111">111</a></span>
+<span class="normal"><a href="#__codelineno-7-112">112</a></span>
+<span class="normal"><a href="#__codelineno-7-113">113</a></span>
+<span class="normal"><a href="#__codelineno-7-114">114</a></span>
+<span class="normal"><a href="#__codelineno-7-115">115</a></span>
+<span class="normal"><a href="#__codelineno-7-116">116</a></span>
+<span class="normal"><a href="#__codelineno-7-117">117</a></span>
+<span class="normal"><a href="#__codelineno-7-118">118</a></span>
+<span class="normal"><a href="#__codelineno-7-119">119</a></span>
+<span class="normal"><a href="#__codelineno-7-120">120</a></span>
+<span class="normal"><a href="#__codelineno-7-121">121</a></span>
+<span class="normal"><a href="#__codelineno-7-122">122</a></span>
+<span class="normal"><a href="#__codelineno-7-123">123</a></span>
+<span class="normal"><a href="#__codelineno-7-124">124</a></span>
+<span class="normal"><a href="#__codelineno-7-125">125</a></span>
+<span class="normal"><a href="#__codelineno-7-126">126</a></span>
+<span class="normal"><a href="#__codelineno-7-127">127</a></span>
+<span class="normal"><a href="#__codelineno-7-128">128</a></span>
+<span class="normal"><a href="#__codelineno-7-129">129</a></span>
+<span class="normal"><a href="#__codelineno-7-130">130</a></span>
+<span class="normal"><a href="#__codelineno-7-131">131</a></span>
+<span class="normal"><a href="#__codelineno-7-132">132</a></span>
+<span class="normal"><a href="#__codelineno-7-133">133</a></span>
+<span class="normal"><a href="#__codelineno-7-134">134</a></span>
+<span class="normal"><a href="#__codelineno-7-135">135</a></span>
+<span class="normal"><a href="#__codelineno-7-136">136</a></span>
+<span class="normal"><a href="#__codelineno-7-137">137</a></span>
+<span class="normal"><a href="#__codelineno-7-138">138</a></span>
+<span class="normal"><a href="#__codelineno-7-139">139</a></span>
+<span class="normal"><a href="#__codelineno-7-140">140</a></span>
+<span class="normal"><a href="#__codelineno-7-141">141</a></span>
+<span class="normal"><a href="#__codelineno-7-142">142</a></span>
+<span class="normal"><a href="#__codelineno-7-143">143</a></span>
+<span class="normal"><a href="#__codelineno-7-144">144</a></span>
+<span class="normal"><a href="#__codelineno-7-145">145</a></span>
+<span class="normal"><a href="#__codelineno-7-146">146</a></span>
+<span class="normal"><a href="#__codelineno-7-147">147</a></span>
+<span class="normal"><a href="#__codelineno-7-148">148</a></span>
+<span class="normal"><a href="#__codelineno-7-149">149</a></span>
+<span class="normal"><a href="#__codelineno-7-150">150</a></span>
+<span class="normal"><a href="#__codelineno-7-151">151</a></span>
+<span class="normal"><a href="#__codelineno-7-152">152</a></span>
+<span class="normal"><a href="#__codelineno-7-153">153</a></span>
+<span class="normal"><a href="#__codelineno-7-154">154</a></span>
+<span class="normal"><a href="#__codelineno-7-155">155</a></span>
+<span class="normal"><a href="#__codelineno-7-156">156</a></span>
+<span class="normal"><a href="#__codelineno-7-157">157</a></span>
+<span class="normal"><a href="#__codelineno-7-158">158</a></span>
+<span class="normal"><a href="#__codelineno-7-159">159</a></span>
+<span class="normal"><a href="#__codelineno-7-160">160</a></span>
+<span class="normal"><a href="#__codelineno-7-161">161</a></span>
+<span class="normal"><a href="#__codelineno-7-162">162</a></span>
+<span class="normal"><a href="#__codelineno-7-163">163</a></span>
+<span class="normal"><a href="#__codelineno-7-164">164</a></span>
+<span class="normal"><a href="#__codelineno-7-165">165</a></span>
+<span class="normal"><a href="#__codelineno-7-166">166</a></span>
+<span class="normal"><a href="#__codelineno-7-167">167</a></span>
+<span class="normal"><a href="#__codelineno-7-168">168</a></span>
+<span class="normal"><a href="#__codelineno-7-169">169</a></span>
+<span class="normal"><a href="#__codelineno-7-170">170</a></span>
+<span class="normal"><a href="#__codelineno-7-171">171</a></span>
+<span class="normal"><a href="#__codelineno-7-172">172</a></span>
+<span class="normal"><a href="#__codelineno-7-173">173</a></span>
+<span class="normal"><a href="#__codelineno-7-174">174</a></span>
+<span class="normal"><a href="#__codelineno-7-175">175</a></span>
+<span class="normal"><a href="#__codelineno-7-176">176</a></span>
+<span class="normal"><a href="#__codelineno-7-177">177</a></span>
+<span class="normal"><a href="#__codelineno-7-178">178</a></span>
+<span class="normal"><a href="#__codelineno-7-179">179</a></span>
+<span class="normal"><a href="#__codelineno-7-180">180</a></span>
+<span class="normal"><a href="#__codelineno-7-181">181</a></span>
+<span class="normal"><a href="#__codelineno-7-182">182</a></span>
+<span class="normal"><a href="#__codelineno-7-183">183</a></span>
+<span class="normal"><a href="#__codelineno-7-184">184</a></span>
+<span class="normal"><a href="#__codelineno-7-185">185</a></span>
+<span class="normal"><a href="#__codelineno-7-186">186</a></span>
+<span class="normal"><a href="#__codelineno-7-187">187</a></span>
+<span class="normal"><a href="#__codelineno-7-188">188</a></span>
+<span class="normal"><a href="#__codelineno-7-189">189</a></span>
+<span class="normal"><a href="#__codelineno-7-190">190</a></span>
+<span class="normal"><a href="#__codelineno-7-191">191</a></span>
+<span class="normal"><a href="#__codelineno-7-192">192</a></span>
+<span class="normal"><a href="#__codelineno-7-193">193</a></span>
+<span class="normal"><a href="#__codelineno-7-194">194</a></span>
+<span class="normal"><a href="#__codelineno-7-195">195</a></span>
+<span class="normal"><a href="#__codelineno-7-196">196</a></span>
+<span class="normal"><a href="#__codelineno-7-197">197</a></span>
+<span class="normal"><a href="#__codelineno-7-198">198</a></span>
+<span class="normal"><a href="#__codelineno-7-199">199</a></span>
+<span class="normal"><a href="#__codelineno-7-200">200</a></span>
+<span class="normal"><a href="#__codelineno-7-201">201</a></span>
+<span class="normal"><a href="#__codelineno-7-202">202</a></span>
+<span class="normal"><a href="#__codelineno-7-203">203</a></span>
+<span class="normal"><a href="#__codelineno-7-204">204</a></span>
+<span class="normal"><a href="#__codelineno-7-205">205</a></span>
+<span class="normal"><a href="#__codelineno-7-206">206</a></span>
+<span class="normal"><a href="#__codelineno-7-207">207</a></span>
+<span class="normal"><a href="#__codelineno-7-208">208</a></span>
+<span class="normal"><a href="#__codelineno-7-209">209</a></span>
+<span class="normal"><a href="#__codelineno-7-210">210</a></span>
+<span class="normal"><a href="#__codelineno-7-211">211</a></span>
+<span class="normal"><a href="#__codelineno-7-212">212</a></span>
+<span class="normal"><a href="#__codelineno-7-213">213</a></span>
+<span class="normal"><a href="#__codelineno-7-214">214</a></span>
+<span class="normal"><a href="#__codelineno-7-215">215</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>import ollama
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>import time
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>import json
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>import subprocess
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>import psutil
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>import os
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a>from datetime import datetime
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>from pathlib import Path
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a>class LLMTestFramework:
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a>  def __init__(self):
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>      self.log_file = f&quot;llm_test_log_{datetime.now().strftime(&#39;%Y%m%d_%H%M%S&#39;)}.json&quot;
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a>      self.results = []
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a>  def get_gpu_stats(self):
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a>      &quot;&quot;&quot;獲取 GPU 狀態&quot;&quot;&quot;
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a>      try:
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a>          result = subprocess.run([
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a>              &#39;nvidia-smi&#39;, &#39;--query-gpu=utilization.gpu,memory.used,memory.total,temperature.gpu,power.draw&#39;,
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a>              &#39;--format=csv,noheader,nounits&#39;
+<a id="__codelineno-7-21" name="__codelineno-7-21"></a>          ], capture_output=True, text=True)
+<a id="__codelineno-7-22" name="__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23"></a>          if result.returncode == 0:
+<a id="__codelineno-7-24" name="__codelineno-7-24"></a>              stats = result.stdout.strip().split(&#39;, &#39;)
+<a id="__codelineno-7-25" name="__codelineno-7-25"></a>              return {
+<a id="__codelineno-7-26" name="__codelineno-7-26"></a>                  &#39;gpu_util&#39;: float(stats[0]),
+<a id="__codelineno-7-27" name="__codelineno-7-27"></a>                  &#39;memory_used&#39;: int(stats[1]),
+<a id="__codelineno-7-28" name="__codelineno-7-28"></a>                  &#39;memory_total&#39;: int(stats[2]),
+<a id="__codelineno-7-29" name="__codelineno-7-29"></a>                  &#39;memory_percent&#39;: (int(stats[1]) / int(stats[2])) * 100,
+<a id="__codelineno-7-30" name="__codelineno-7-30"></a>                  &#39;temperature&#39;: float(stats[3]),
+<a id="__codelineno-7-31" name="__codelineno-7-31"></a>                  &#39;power_draw&#39;: float(stats[4])
+<a id="__codelineno-7-32" name="__codelineno-7-32"></a>              }
+<a id="__codelineno-7-33" name="__codelineno-7-33"></a>      except Exception as e:
+<a id="__codelineno-7-34" name="__codelineno-7-34"></a>          print(f&quot;無法獲取 GPU 狀態: {e}&quot;)
+<a id="__codelineno-7-35" name="__codelineno-7-35"></a>          return None
+<a id="__codelineno-7-36" name="__codelineno-7-36"></a>
+<a id="__codelineno-7-37" name="__codelineno-7-37"></a>  def get_system_stats(self):
+<a id="__codelineno-7-38" name="__codelineno-7-38"></a>      &quot;&quot;&quot;獲取系統狀態&quot;&quot;&quot;
+<a id="__codelineno-7-39" name="__codelineno-7-39"></a>      memory = psutil.virtual_memory()
+<a id="__codelineno-7-40" name="__codelineno-7-40"></a>      cpu_percent = psutil.cpu_percent(interval=1)
+<a id="__codelineno-7-41" name="__codelineno-7-41"></a>
+<a id="__codelineno-7-42" name="__codelineno-7-42"></a>      return {
+<a id="__codelineno-7-43" name="__codelineno-7-43"></a>          &#39;cpu_percent&#39;: cpu_percent,
+<a id="__codelineno-7-44" name="__codelineno-7-44"></a>          &#39;ram_used_gb&#39;: memory.used / (1024**3),
+<a id="__codelineno-7-45" name="__codelineno-7-45"></a>          &#39;ram_total_gb&#39;: memory.total / (1024**3),
+<a id="__codelineno-7-46" name="__codelineno-7-46"></a>          &#39;ram_percent&#39;: memory.percent
+<a id="__codelineno-7-47" name="__codelineno-7-47"></a>      }
+<a id="__codelineno-7-48" name="__codelineno-7-48"></a>
+<a id="__codelineno-7-49" name="__codelineno-7-49"></a>  def run_test(self, test_name, model, prompt, description=&quot;&quot;):
+<a id="__codelineno-7-50" name="__codelineno-7-50"></a>      &quot;&quot;&quot;執行單個測試並記錄結果&quot;&quot;&quot;
+<a id="__codelineno-7-51" name="__codelineno-7-51"></a>      print(f&quot;\n🧪 開始測試: {test_name}&quot;)
+<a id="__codelineno-7-52" name="__codelineno-7-52"></a>      print(f&quot;📋 描述: {description}&quot;)
+<a id="__codelineno-7-53" name="__codelineno-7-53"></a>      print(f&quot;🤖 模型: {model}&quot;)
+<a id="__codelineno-7-54" name="__codelineno-7-54"></a>      print(f&quot;💬 提示: {prompt}&quot;)
+<a id="__codelineno-7-55" name="__codelineno-7-55"></a>      print(&quot;-&quot; * 60)
+<a id="__codelineno-7-56" name="__codelineno-7-56"></a>
+<a id="__codelineno-7-57" name="__codelineno-7-57"></a>      # 記錄測試前狀態
+<a id="__codelineno-7-58" name="__codelineno-7-58"></a>      pre_gpu = self.get_gpu_stats()
+<a id="__codelineno-7-59" name="__codelineno-7-59"></a>      pre_system = self.get_system_stats()
+<a id="__codelineno-7-60" name="__codelineno-7-60"></a>
+<a id="__codelineno-7-61" name="__codelineno-7-61"></a>      # 執行測試
+<a id="__codelineno-7-62" name="__codelineno-7-62"></a>      start_time = time.time()
+<a id="__codelineno-7-63" name="__codelineno-7-63"></a>      try:
+<a id="__codelineno-7-64" name="__codelineno-7-64"></a>          response = ollama.chat(model=model, messages=[
+<a id="__codelineno-7-65" name="__codelineno-7-65"></a>              {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}
+<a id="__codelineno-7-66" name="__codelineno-7-66"></a>          ])
+<a id="__codelineno-7-67" name="__codelineno-7-67"></a>          success = True
+<a id="__codelineno-7-68" name="__codelineno-7-68"></a>          error_msg = None
+<a id="__codelineno-7-69" name="__codelineno-7-69"></a>      except Exception as e:
+<a id="__codelineno-7-70" name="__codelineno-7-70"></a>          response = None
+<a id="__codelineno-7-71" name="__codelineno-7-71"></a>          success = False
+<a id="__codelineno-7-72" name="__codelineno-7-72"></a>          error_msg = str(e)
+<a id="__codelineno-7-73" name="__codelineno-7-73"></a>
+<a id="__codelineno-7-74" name="__codelineno-7-74"></a>      end_time = time.time()
+<a id="__codelineno-7-75" name="__codelineno-7-75"></a>
+<a id="__codelineno-7-76" name="__codelineno-7-76"></a>      # 記錄測試後狀態
+<a id="__codelineno-7-77" name="__codelineno-7-77"></a>      post_gpu = self.get_gpu_stats()
+<a id="__codelineno-7-78" name="__codelineno-7-78"></a>      post_system = self.get_system_stats()
+<a id="__codelineno-7-79" name="__codelineno-7-79"></a>
+<a id="__codelineno-7-80" name="__codelineno-7-80"></a>      duration = end_time - start_time
+<a id="__codelineno-7-81" name="__codelineno-7-81"></a>
+<a id="__codelineno-7-82" name="__codelineno-7-82"></a>      # 準備結果數據
+<a id="__codelineno-7-83" name="__codelineno-7-83"></a>      result = {
+<a id="__codelineno-7-84" name="__codelineno-7-84"></a>          &#39;timestamp&#39;: datetime.now().isoformat(),
+<a id="__codelineno-7-85" name="__codelineno-7-85"></a>          &#39;test_name&#39;: test_name,
+<a id="__codelineno-7-86" name="__codelineno-7-86"></a>          &#39;description&#39;: description,
+<a id="__codelineno-7-87" name="__codelineno-7-87"></a>          &#39;model&#39;: model,
+<a id="__codelineno-7-88" name="__codelineno-7-88"></a>          &#39;prompt&#39;: prompt,
+<a id="__codelineno-7-89" name="__codelineno-7-89"></a>          &#39;duration_seconds&#39;: round(duration, 2),
+<a id="__codelineno-7-90" name="__codelineno-7-90"></a>          &#39;success&#39;: success,
+<a id="__codelineno-7-91" name="__codelineno-7-91"></a>          &#39;error_message&#39;: error_msg,
+<a id="__codelineno-7-92" name="__codelineno-7-92"></a>          &#39;response_length&#39;: len(response[&#39;message&#39;][&#39;content&#39;]) if response else 0,
+<a id="__codelineno-7-93" name="__codelineno-7-93"></a>          &#39;tokens_per_second&#39;: len(response[&#39;message&#39;][&#39;content&#39;]) / duration if response else 0,
+<a id="__codelineno-7-94" name="__codelineno-7-94"></a>          &#39;pre_test_gpu&#39;: pre_gpu,
+<a id="__codelineno-7-95" name="__codelineno-7-95"></a>          &#39;post_test_gpu&#39;: post_gpu,
+<a id="__codelineno-7-96" name="__codelineno-7-96"></a>          &#39;pre_test_system&#39;: pre_system,
+<a id="__codelineno-7-97" name="__codelineno-7-97"></a>          &#39;post_test_system&#39;: post_system,
+<a id="__codelineno-7-98" name="__codelineno-7-98"></a>          &#39;response_preview&#39;: response[&#39;message&#39;][&#39;content&#39;][:200] + &quot;...&quot; if response else None
+<a id="__codelineno-7-99" name="__codelineno-7-99"></a>      }
+<a id="__codelineno-7-100" name="__codelineno-7-100"></a>
+<a id="__codelineno-7-101" name="__codelineno-7-101"></a>      self.results.append(result)
+<a id="__codelineno-7-102" name="__codelineno-7-102"></a>
+<a id="__codelineno-7-103" name="__codelineno-7-103"></a>      # 即時顯示結果
+<a id="__codelineno-7-104" name="__codelineno-7-104"></a>      print(f&quot;✅ 測試完成!&quot;)
+<a id="__codelineno-7-105" name="__codelineno-7-105"></a>      print(f&quot;⏱️  執行時間: {duration:.2f} 秒&quot;)
+<a id="__codelineno-7-106" name="__codelineno-7-106"></a>      if post_gpu:
+<a id="__codelineno-7-107" name="__codelineno-7-107"></a>          print(f&quot;🔥 GPU 使用率: {post_gpu[&#39;gpu_util&#39;]}%&quot;)
+<a id="__codelineno-7-108" name="__codelineno-7-108"></a>          print(f&quot;💾 GPU 記憶體: {post_gpu[&#39;memory_percent&#39;]:.1f}%&quot;)
+<a id="__codelineno-7-109" name="__codelineno-7-109"></a>          print(f&quot;🌡️  GPU 溫度: {post_gpu[&#39;temperature&#39;]}°C&quot;)
+<a id="__codelineno-7-110" name="__codelineno-7-110"></a>          print(f&quot;⚡ GPU 功耗: {post_gpu[&#39;power_draw&#39;]}W&quot;)
+<a id="__codelineno-7-111" name="__codelineno-7-111"></a>
+<a id="__codelineno-7-112" name="__codelineno-7-112"></a>      if response:
+<a id="__codelineno-7-113" name="__codelineno-7-113"></a>          print(f&quot;📝 回應長度: {len(response[&#39;message&#39;][&#39;content&#39;])} 字元&quot;)
+<a id="__codelineno-7-114" name="__codelineno-7-114"></a>          print(f&quot;🏃 處理速度: {len(response[&#39;message&#39;][&#39;content&#39;])/duration:.1f} 字元/秒&quot;)
+<a id="__codelineno-7-115" name="__codelineno-7-115"></a>          print(f&quot;💬 回應預覽: {response[&#39;message&#39;][&#39;content&#39;][:150]}...&quot;)
+<a id="__codelineno-7-116" name="__codelineno-7-116"></a>
+<a id="__codelineno-7-117" name="__codelineno-7-117"></a>      return result
+<a id="__codelineno-7-118" name="__codelineno-7-118"></a>
+<a id="__codelineno-7-119" name="__codelineno-7-119"></a>  def save_results(self):
+<a id="__codelineno-7-120" name="__codelineno-7-120"></a>      &quot;&quot;&quot;儲存所有測試結果&quot;&quot;&quot;
+<a id="__codelineno-7-121" name="__codelineno-7-121"></a>      with open(self.log_file, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+<a id="__codelineno-7-122" name="__codelineno-7-122"></a>          json.dump(self.results, f, indent=2, ensure_ascii=False)
+<a id="__codelineno-7-123" name="__codelineno-7-123"></a>
+<a id="__codelineno-7-124" name="__codelineno-7-124"></a>      print(f&quot;\n📊 測試結果已儲存至: {self.log_file}&quot;)
+<a id="__codelineno-7-125" name="__codelineno-7-125"></a>      return self.log_file
+<a id="__codelineno-7-126" name="__codelineno-7-126"></a>
+<a id="__codelineno-7-127" name="__codelineno-7-127"></a>  def generate_summary(self):
+<a id="__codelineno-7-128" name="__codelineno-7-128"></a>      &quot;&quot;&quot;生成測試摘要&quot;&quot;&quot;
+<a id="__codelineno-7-129" name="__codelineno-7-129"></a>      if not self.results:
+<a id="__codelineno-7-130" name="__codelineno-7-130"></a>          return
+<a id="__codelineno-7-131" name="__codelineno-7-131"></a>
+<a id="__codelineno-7-132" name="__codelineno-7-132"></a>      print(&quot;\n&quot; + &quot;=&quot;*80)
+<a id="__codelineno-7-133" name="__codelineno-7-133"></a>      print(&quot;📊 測試摘要報告&quot;)
+<a id="__codelineno-7-134" name="__codelineno-7-134"></a>      print(&quot;=&quot;*80)
+<a id="__codelineno-7-135" name="__codelineno-7-135"></a>
+<a id="__codelineno-7-136" name="__codelineno-7-136"></a>      successful_tests = [r for r in self.results if r[&#39;success&#39;]]
+<a id="__codelineno-7-137" name="__codelineno-7-137"></a>      failed_tests = [r for r in self.results if not r[&#39;success&#39;]]
+<a id="__codelineno-7-138" name="__codelineno-7-138"></a>
+<a id="__codelineno-7-139" name="__codelineno-7-139"></a>      print(f&quot;總測試數: {len(self.results)}&quot;)
+<a id="__codelineno-7-140" name="__codelineno-7-140"></a>      print(f&quot;成功: {len(successful_tests)}&quot;)
+<a id="__codelineno-7-141" name="__codelineno-7-141"></a>      print(f&quot;失敗: {len(failed_tests)}&quot;)
+<a id="__codelineno-7-142" name="__codelineno-7-142"></a>
+<a id="__codelineno-7-143" name="__codelineno-7-143"></a>      if successful_tests:
+<a id="__codelineno-7-144" name="__codelineno-7-144"></a>          avg_duration = sum(r[&#39;duration_seconds&#39;] for r in successful_tests) / len(successful_tests)
+<a id="__codelineno-7-145" name="__codelineno-7-145"></a>          avg_speed = sum(r[&#39;tokens_per_second&#39;] for r in successful_tests) / len(successful_tests)
+<a id="__codelineno-7-146" name="__codelineno-7-146"></a>
+<a id="__codelineno-7-147" name="__codelineno-7-147"></a>          gpu_utils = [r[&#39;post_test_gpu&#39;][&#39;gpu_util&#39;] for r in successful_tests if r[&#39;post_test_gpu&#39;]]
+<a id="__codelineno-7-148" name="__codelineno-7-148"></a>          gpu_temps = [r[&#39;post_test_gpu&#39;][&#39;temperature&#39;] for r in successful_tests if r[&#39;post_test_gpu&#39;]]
+<a id="__codelineno-7-149" name="__codelineno-7-149"></a>          gpu_powers = [r[&#39;post_test_gpu&#39;][&#39;power_draw&#39;] for r in successful_tests if r[&#39;post_test_gpu&#39;]]
+<a id="__codelineno-7-150" name="__codelineno-7-150"></a>
+<a id="__codelineno-7-151" name="__codelineno-7-151"></a>          print(f&quot;\n效能統計:&quot;)
+<a id="__codelineno-7-152" name="__codelineno-7-152"></a>          print(f&quot;  平均執行時間: {avg_duration:.2f} 秒&quot;)
+<a id="__codelineno-7-153" name="__codelineno-7-153"></a>          print(f&quot;  平均處理速度: {avg_speed:.1f} 字元/秒&quot;)
+<a id="__codelineno-7-154" name="__codelineno-7-154"></a>
+<a id="__codelineno-7-155" name="__codelineno-7-155"></a>          if gpu_utils:
+<a id="__codelineno-7-156" name="__codelineno-7-156"></a>              print(f&quot;  平均 GPU 使用率: {sum(gpu_utils)/len(gpu_utils):.1f}%&quot;)
+<a id="__codelineno-7-157" name="__codelineno-7-157"></a>              print(f&quot;  平均 GPU 溫度: {sum(gpu_temps)/len(gpu_temps):.1f}°C&quot;)
+<a id="__codelineno-7-158" name="__codelineno-7-158"></a>              print(f&quot;  平均 GPU 功耗: {sum(gpu_powers)/len(gpu_powers):.1f}W&quot;)
+<a id="__codelineno-7-159" name="__codelineno-7-159"></a>
+<a id="__codelineno-7-160" name="__codelineno-7-160"></a>      if failed_tests:
+<a id="__codelineno-7-161" name="__codelineno-7-161"></a>          print(f&quot;\n❌ 失敗的測試:&quot;)
+<a id="__codelineno-7-162" name="__codelineno-7-162"></a>          for test in failed_tests:
+<a id="__codelineno-7-163" name="__codelineno-7-163"></a>              print(f&quot;  - {test[&#39;test_name&#39;]}: {test[&#39;error_message&#39;]}&quot;)
+<a id="__codelineno-7-164" name="__codelineno-7-164"></a>
+<a id="__codelineno-7-165" name="__codelineno-7-165"></a># 使用範例
+<a id="__codelineno-7-166" name="__codelineno-7-166"></a>def main():
+<a id="__codelineno-7-167" name="__codelineno-7-167"></a>  framework = LLMTestFramework()
+<a id="__codelineno-7-168" name="__codelineno-7-168"></a>
+<a id="__codelineno-7-169" name="__codelineno-7-169"></a>  # 定義測試案例
+<a id="__codelineno-7-170" name="__codelineno-7-170"></a>  test_cases = [
+<a id="__codelineno-7-171" name="__codelineno-7-171"></a>      {
+<a id="__codelineno-7-172" name="__codelineno-7-172"></a>          &#39;name&#39;: &#39;簡單數學&#39;,
+<a id="__codelineno-7-173" name="__codelineno-7-173"></a>          &#39;model&#39;: &#39;llama2:7b&#39;,
+<a id="__codelineno-7-174" name="__codelineno-7-174"></a>          &#39;prompt&#39;: &#39;What is 15 + 27?&#39;,
+<a id="__codelineno-7-175" name="__codelineno-7-175"></a>          &#39;description&#39;: &#39;測試基本數學計算能力&#39;
+<a id="__codelineno-7-176" name="__codelineno-7-176"></a>      },
+<a id="__codelineno-7-177" name="__codelineno-7-177"></a>      {
+<a id="__codelineno-7-178" name="__codelineno-7-178"></a>          &#39;name&#39;: &#39;短文解釋&#39;,
+<a id="__codelineno-7-179" name="__codelineno-7-179"></a>          &#39;model&#39;: &#39;llama2:7b&#39;,
+<a id="__codelineno-7-180" name="__codelineno-7-180"></a>          &#39;prompt&#39;: &#39;Explain what is photosynthesis in 2 sentences&#39;,
+<a id="__codelineno-7-181" name="__codelineno-7-181"></a>          &#39;description&#39;: &#39;測試科學概念解釋能力&#39;
+<a id="__codelineno-7-182" name="__codelineno-7-182"></a>      },
+<a id="__codelineno-7-183" name="__codelineno-7-183"></a>      {
+<a id="__codelineno-7-184" name="__codelineno-7-184"></a>          &#39;name&#39;: &#39;創意寫作&#39;,
+<a id="__codelineno-7-185" name="__codelineno-7-185"></a>          &#39;model&#39;: &#39;llama2:7b&#39;,
+<a id="__codelineno-7-186" name="__codelineno-7-186"></a>          &#39;prompt&#39;: &#39;Write a haiku about artificial intelligence&#39;,
+<a id="__codelineno-7-187" name="__codelineno-7-187"></a>          &#39;description&#39;: &#39;測試創意寫作能力&#39;
+<a id="__codelineno-7-188" name="__codelineno-7-188"></a>      },
+<a id="__codelineno-7-189" name="__codelineno-7-189"></a>      {
+<a id="__codelineno-7-190" name="__codelineno-7-190"></a>          &#39;name&#39;: &#39;中文對話&#39;,
+<a id="__codelineno-7-191" name="__codelineno-7-191"></a>          &#39;model&#39;: &#39;qwen2.5:7b&#39;,
+<a id="__codelineno-7-192" name="__codelineno-7-192"></a>          &#39;prompt&#39;: &#39;請用中文解釋什麼是機器學習&#39;,
+<a id="__codelineno-7-193" name="__codelineno-7-193"></a>          &#39;description&#39;: &#39;測試中文模型表現&#39;
+<a id="__codelineno-7-194" name="__codelineno-7-194"></a>      }
+<a id="__codelineno-7-195" name="__codelineno-7-195"></a>  ]
+<a id="__codelineno-7-196" name="__codelineno-7-196"></a>
+<a id="__codelineno-7-197" name="__codelineno-7-197"></a>  # 執行所有測試
+<a id="__codelineno-7-198" name="__codelineno-7-198"></a>  for test_case in test_cases:
+<a id="__codelineno-7-199" name="__codelineno-7-199"></a>      framework.run_test(
+<a id="__codelineno-7-200" name="__codelineno-7-200"></a>          test_case[&#39;name&#39;],
+<a id="__codelineno-7-201" name="__codelineno-7-201"></a>          test_case[&#39;model&#39;],
+<a id="__codelineno-7-202" name="__codelineno-7-202"></a>          test_case[&#39;prompt&#39;],
+<a id="__codelineno-7-203" name="__codelineno-7-203"></a>          test_case[&#39;description&#39;]
+<a id="__codelineno-7-204" name="__codelineno-7-204"></a>      )
+<a id="__codelineno-7-205" name="__codelineno-7-205"></a>      time.sleep(2)  # 讓系統穩定
+<a id="__codelineno-7-206" name="__codelineno-7-206"></a>
+<a id="__codelineno-7-207" name="__codelineno-7-207"></a>  # 儲存結果並生成摘要
+<a id="__codelineno-7-208" name="__codelineno-7-208"></a>  log_file = framework.save_results()
+<a id="__codelineno-7-209" name="__codelineno-7-209"></a>  framework.generate_summary()
+<a id="__codelineno-7-210" name="__codelineno-7-210"></a>
+<a id="__codelineno-7-211" name="__codelineno-7-211"></a>  return log_file
+<a id="__codelineno-7-212" name="__codelineno-7-212"></a>
+<a id="__codelineno-7-213" name="__codelineno-7-213"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-7-214" name="__codelineno-7-214"></a>  log_file = main()
+<a id="__codelineno-7-215" name="__codelineno-7-215"></a>  print(f&quot;\n🎉 所有測試完成！詳細記錄請查看: {log_file}&quot;)
+</code></pre></div></td></tr></table></div>
+- ## A6. HTML 報告生成器
+- ### <code>html_reporter.py</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span>
+<span class="normal"><a href="#__codelineno-8-15">15</a></span>
+<span class="normal"><a href="#__codelineno-8-16">16</a></span>
+<span class="normal"><a href="#__codelineno-8-17">17</a></span>
+<span class="normal"><a href="#__codelineno-8-18">18</a></span>
+<span class="normal"><a href="#__codelineno-8-19">19</a></span>
+<span class="normal"><a href="#__codelineno-8-20">20</a></span>
+<span class="normal"><a href="#__codelineno-8-21">21</a></span>
+<span class="normal"><a href="#__codelineno-8-22">22</a></span>
+<span class="normal"><a href="#__codelineno-8-23">23</a></span>
+<span class="normal"><a href="#__codelineno-8-24">24</a></span>
+<span class="normal"><a href="#__codelineno-8-25">25</a></span>
+<span class="normal"><a href="#__codelineno-8-26">26</a></span>
+<span class="normal"><a href="#__codelineno-8-27">27</a></span>
+<span class="normal"><a href="#__codelineno-8-28">28</a></span>
+<span class="normal"><a href="#__codelineno-8-29">29</a></span>
+<span class="normal"><a href="#__codelineno-8-30">30</a></span>
+<span class="normal"><a href="#__codelineno-8-31">31</a></span>
+<span class="normal"><a href="#__codelineno-8-32">32</a></span>
+<span class="normal"><a href="#__codelineno-8-33">33</a></span>
+<span class="normal"><a href="#__codelineno-8-34">34</a></span>
+<span class="normal"><a href="#__codelineno-8-35">35</a></span>
+<span class="normal"><a href="#__codelineno-8-36">36</a></span>
+<span class="normal"><a href="#__codelineno-8-37">37</a></span>
+<span class="normal"><a href="#__codelineno-8-38">38</a></span>
+<span class="normal"><a href="#__codelineno-8-39">39</a></span>
+<span class="normal"><a href="#__codelineno-8-40">40</a></span>
+<span class="normal"><a href="#__codelineno-8-41">41</a></span>
+<span class="normal"><a href="#__codelineno-8-42">42</a></span>
+<span class="normal"><a href="#__codelineno-8-43">43</a></span>
+<span class="normal"><a href="#__codelineno-8-44">44</a></span>
+<span class="normal"><a href="#__codelineno-8-45">45</a></span>
+<span class="normal"><a href="#__codelineno-8-46">46</a></span>
+<span class="normal"><a href="#__codelineno-8-47">47</a></span>
+<span class="normal"><a href="#__codelineno-8-48">48</a></span>
+<span class="normal"><a href="#__codelineno-8-49">49</a></span>
+<span class="normal"><a href="#__codelineno-8-50">50</a></span>
+<span class="normal"><a href="#__codelineno-8-51">51</a></span>
+<span class="normal"><a href="#__codelineno-8-52">52</a></span>
+<span class="normal"><a href="#__codelineno-8-53">53</a></span>
+<span class="normal"><a href="#__codelineno-8-54">54</a></span>
+<span class="normal"><a href="#__codelineno-8-55">55</a></span>
+<span class="normal"><a href="#__codelineno-8-56">56</a></span>
+<span class="normal"><a href="#__codelineno-8-57">57</a></span>
+<span class="normal"><a href="#__codelineno-8-58">58</a></span>
+<span class="normal"><a href="#__codelineno-8-59">59</a></span>
+<span class="normal"><a href="#__codelineno-8-60">60</a></span>
+<span class="normal"><a href="#__codelineno-8-61">61</a></span>
+<span class="normal"><a href="#__codelineno-8-62">62</a></span>
+<span class="normal"><a href="#__codelineno-8-63">63</a></span>
+<span class="normal"><a href="#__codelineno-8-64">64</a></span>
+<span class="normal"><a href="#__codelineno-8-65">65</a></span>
+<span class="normal"><a href="#__codelineno-8-66">66</a></span>
+<span class="normal"><a href="#__codelineno-8-67">67</a></span>
+<span class="normal"><a href="#__codelineno-8-68">68</a></span>
+<span class="normal"><a href="#__codelineno-8-69">69</a></span>
+<span class="normal"><a href="#__codelineno-8-70">70</a></span>
+<span class="normal"><a href="#__codelineno-8-71">71</a></span>
+<span class="normal"><a href="#__codelineno-8-72">72</a></span>
+<span class="normal"><a href="#__codelineno-8-73">73</a></span>
+<span class="normal"><a href="#__codelineno-8-74">74</a></span>
+<span class="normal"><a href="#__codelineno-8-75">75</a></span>
+<span class="normal"><a href="#__codelineno-8-76">76</a></span>
+<span class="normal"><a href="#__codelineno-8-77">77</a></span>
+<span class="normal"><a href="#__codelineno-8-78">78</a></span>
+<span class="normal"><a href="#__codelineno-8-79">79</a></span>
+<span class="normal"><a href="#__codelineno-8-80">80</a></span>
+<span class="normal"><a href="#__codelineno-8-81">81</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>import json
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>from datetime import datetime
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>from pathlib import Path
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>def generate_html_report(json_file):
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a>  &quot;&quot;&quot;從 JSON 記錄生成 HTML 報告&quot;&quot;&quot;
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>  with open(json_file, &#39;r&#39;, encoding=&#39;utf-8&#39;) as f:
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>      data = json.load(f)
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a>  html = f&quot;&quot;&quot;
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a>  &lt;!DOCTYPE html&gt;
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a>  &lt;html&gt;
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a>  &lt;head&gt;
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a>      &lt;title&gt;LLM 測試報告&lt;/title&gt;
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a>      &lt;style&gt;
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a>          body {{ font-family: Arial, sans-serif; margin: 20px; }}
+<a id="__codelineno-8-18" name="__codelineno-8-18"></a>          .test {{ border: 1px solid #ddd; margin: 10px 0; padding: 15px; border-radius: 5px; }}
+<a id="__codelineno-8-19" name="__codelineno-8-19"></a>          .success {{ border-left: 5px solid #4CAF50; }}
+<a id="__codelineno-8-20" name="__codelineno-8-20"></a>          .failed {{ border-left: 5px solid #f44336; }}
+<a id="__codelineno-8-21" name="__codelineno-8-21"></a>          .stats {{ background: #f9f9f9; padding: 10px; margin: 10px 0; }}
+<a id="__codelineno-8-22" name="__codelineno-8-22"></a>          table {{ border-collapse: collapse; width: 100%; }}
+<a id="__codelineno-8-23" name="__codelineno-8-23"></a>          th, td {{ border: 1px solid #ddd; padding: 8px; text-align: left; }}
+<a id="__codelineno-8-24" name="__codelineno-8-24"></a>          th {{ background-color: #f2f2f2; }}
+<a id="__codelineno-8-25" name="__codelineno-8-25"></a>      &lt;/style&gt;
+<a id="__codelineno-8-26" name="__codelineno-8-26"></a>  &lt;/head&gt;
+<a id="__codelineno-8-27" name="__codelineno-8-27"></a>  &lt;body&gt;
+<a id="__codelineno-8-28" name="__codelineno-8-28"></a>      &lt;h1&gt;🚀 RTX 4070 LLM 測試報告&lt;/h1&gt;
+<a id="__codelineno-8-29" name="__codelineno-8-29"></a>      &lt;p&gt;生成時間: {datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S&#39;)}&lt;/p&gt;
+<a id="__codelineno-8-30" name="__codelineno-8-30"></a>
+<a id="__codelineno-8-31" name="__codelineno-8-31"></a>      &lt;h2&gt;📊 統計摘要&lt;/h2&gt;
+<a id="__codelineno-8-32" name="__codelineno-8-32"></a>      &lt;table&gt;
+<a id="__codelineno-8-33" name="__codelineno-8-33"></a>          &lt;tr&gt;&lt;th&gt;項目&lt;/th&gt;&lt;th&gt;數值&lt;/th&gt;&lt;/tr&gt;
+<a id="__codelineno-8-34" name="__codelineno-8-34"></a>          &lt;tr&gt;&lt;td&gt;總測試數&lt;/td&gt;&lt;td&gt;{len(data)}&lt;/td&gt;&lt;/tr&gt;
+<a id="__codelineno-8-35" name="__codelineno-8-35"></a>          &lt;tr&gt;&lt;td&gt;成功測試&lt;/td&gt;&lt;td&gt;{len([r for r in data if r.get(&#39;success&#39;, True)])}&lt;/td&gt;&lt;/tr&gt;
+<a id="__codelineno-8-36" name="__codelineno-8-36"></a>          &lt;tr&gt;&lt;td&gt;平均執行時間&lt;/td&gt;&lt;td&gt;{sum(r[&#39;duration_seconds&#39;] for r in data)/len(data):.2f} 秒&lt;/td&gt;&lt;/tr&gt;
+<a id="__codelineno-8-37" name="__codelineno-8-37"></a>      &lt;/table&gt;
+<a id="__codelineno-8-38" name="__codelineno-8-38"></a>  &quot;&quot;&quot;
+<a id="__codelineno-8-39" name="__codelineno-8-39"></a>
+<a id="__codelineno-8-40" name="__codelineno-8-40"></a>  html += &quot;&lt;h2&gt;🧪 詳細測試結果&lt;/h2&gt;&quot;
+<a id="__codelineno-8-41" name="__codelineno-8-41"></a>
+<a id="__codelineno-8-42" name="__codelineno-8-42"></a>  for i, result in enumerate(data, 1):
+<a id="__codelineno-8-43" name="__codelineno-8-43"></a>      status_class = &quot;success&quot; if result.get(&#39;success&#39;, True) else &quot;failed&quot;
+<a id="__codelineno-8-44" name="__codelineno-8-44"></a>      gpu_stats = result.get(&#39;post_test_gpu&#39;, {})
+<a id="__codelineno-8-45" name="__codelineno-8-45"></a>
+<a id="__codelineno-8-46" name="__codelineno-8-46"></a>      html += f&quot;&quot;&quot;
+<a id="__codelineno-8-47" name="__codelineno-8-47"></a>      &lt;div class=&quot;test {status_class}&quot;&gt;
+<a id="__codelineno-8-48" name="__codelineno-8-48"></a>          &lt;h3&gt;測試 {i}: {result[&#39;test_name&#39;]}&lt;/h3&gt;
+<a id="__codelineno-8-49" name="__codelineno-8-49"></a>          &lt;p&gt;&lt;strong&gt;描述:&lt;/strong&gt; {result.get(&#39;description&#39;, &#39;N/A&#39;)}&lt;/p&gt;
+<a id="__codelineno-8-50" name="__codelineno-8-50"></a>          &lt;p&gt;&lt;strong&gt;模型:&lt;/strong&gt; {result[&#39;model&#39;]}&lt;/p&gt;
+<a id="__codelineno-8-51" name="__codelineno-8-51"></a>          &lt;p&gt;&lt;strong&gt;提示:&lt;/strong&gt; {result[&#39;prompt&#39;]}&lt;/p&gt;
+<a id="__codelineno-8-52" name="__codelineno-8-52"></a>          &lt;p&gt;&lt;strong&gt;執行時間:&lt;/strong&gt; {result[&#39;duration_seconds&#39;]} 秒&lt;/p&gt;
+<a id="__codelineno-8-53" name="__codelineno-8-53"></a>
+<a id="__codelineno-8-54" name="__codelineno-8-54"></a>          &lt;div class=&quot;stats&quot;&gt;
+<a id="__codelineno-8-55" name="__codelineno-8-55"></a>              &lt;strong&gt;GPU 狀態:&lt;/strong&gt;&lt;br&gt;
+<a id="__codelineno-8-56" name="__codelineno-8-56"></a>              使用率: {gpu_stats.get(&#39;gpu_util&#39;, &#39;N/A&#39;)}% | 
+<a id="__codelineno-8-57" name="__codelineno-8-57"></a>              記憶體: {gpu_stats.get(&#39;memory_percent&#39;, &#39;N/A&#39;):.1f}% | 
+<a id="__codelineno-8-58" name="__codelineno-8-58"></a>              溫度: {gpu_stats.get(&#39;temperature&#39;, &#39;N/A&#39;)}°C | 
+<a id="__codelineno-8-59" name="__codelineno-8-59"></a>              功耗: {gpu_stats.get(&#39;power_draw&#39;, &#39;N/A&#39;)}W
+<a id="__codelineno-8-60" name="__codelineno-8-60"></a>          &lt;/div&gt;
+<a id="__codelineno-8-61" name="__codelineno-8-61"></a>
+<a id="__codelineno-8-62" name="__codelineno-8-62"></a>          &lt;p&gt;&lt;strong&gt;回應預覽:&lt;/strong&gt;&lt;br&gt;
+<a id="__codelineno-8-63" name="__codelineno-8-63"></a>          &lt;em&gt;{result.get(&#39;response_preview&#39;, &#39;N/A&#39;)}&lt;/em&gt;&lt;/p&gt;
+<a id="__codelineno-8-64" name="__codelineno-8-64"></a>      &lt;/div&gt;
+<a id="__codelineno-8-65" name="__codelineno-8-65"></a>      &quot;&quot;&quot;
+<a id="__codelineno-8-66" name="__codelineno-8-66"></a>
+<a id="__codelineno-8-67" name="__codelineno-8-67"></a>  html += &quot;&lt;/body&gt;&lt;/html&gt;&quot;
+<a id="__codelineno-8-68" name="__codelineno-8-68"></a>
+<a id="__codelineno-8-69" name="__codelineno-8-69"></a>  html_file = json_file.replace(&#39;.json&#39;, &#39;.html&#39;)
+<a id="__codelineno-8-70" name="__codelineno-8-70"></a>  with open(html_file, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+<a id="__codelineno-8-71" name="__codelineno-8-71"></a>      f.write(html)
+<a id="__codelineno-8-72" name="__codelineno-8-72"></a>
+<a id="__codelineno-8-73" name="__codelineno-8-73"></a>  print(f&quot;📄 HTML 報告已生成: {html_file}&quot;)
+<a id="__codelineno-8-74" name="__codelineno-8-74"></a>  return html_file
+<a id="__codelineno-8-75" name="__codelineno-8-75"></a>
+<a id="__codelineno-8-76" name="__codelineno-8-76"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-8-77" name="__codelineno-8-77"></a>  import sys
+<a id="__codelineno-8-78" name="__codelineno-8-78"></a>  if len(sys.argv) &gt; 1:
+<a id="__codelineno-8-79" name="__codelineno-8-79"></a>      generate_html_report(sys.argv[1])
+<a id="__codelineno-8-80" name="__codelineno-8-80"></a>  else:
+<a id="__codelineno-8-81" name="__codelineno-8-81"></a>      print(&quot;用法: python3 html_reporter.py &lt;json_file&gt;&quot;)
+</code></pre></div></td></tr></table></div>
+<hr />
+<ul>
+<li>
+<h2 id="_1">📝 使用說明</h2>
+</li>
+<li>
+<h3 id="_2">基本使用</h3>
+</li>
+</ul>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a># 1. 給予執行權限
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>chmod +x ~/gpu_monitor.sh ~/monitor_system.sh
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a># 2. 執行 GPU 監控
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a>./gpu_monitor.sh
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a># 3. 執行系統監控
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a>./monitor_system.sh
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a># 4. 執行 API 測試
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a>python3 ~/test_api.py
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a># 5. 執行完整自動化測試
+<a id="__codelineno-9-14" name="__codelineno-9-14"></a>python3 ~/auto_test_framework.py
+<a id="__codelineno-9-15" name="__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16"></a># 6. 生成 HTML 報告
+<a id="__codelineno-9-17" name="__codelineno-9-17"></a>python3 ~/html_reporter.py llm_test_log_*.json
+</code></pre></div></td></tr></table></div>
+- ### 依賴套件</p>
+<!--EndFragment-->
+<ul>
+<li>
+<h3 id="_3">依賴套件</h3>
+</li>
+</ul>
+<p>bash  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>*# 安裝 Python 套件*
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>pip3 install psutil ollama requests
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a>*# 安裝系統監控工具*
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a>sudo apt install htop nvtop iotop
+</code></pre></div></td></tr></table></div>
+- ### 檔案結構</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>~/
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>├── gpu_monitor.sh              # GPU 即時監控
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>├── monitor_system.sh           # 系統資源監控
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>├── test_api.py                 # 基本 API 測試
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a>├── test_streaming.py           # 串流回應測試
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a>├── performance_test.py         # 效能基準測試
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a>├── conversation_test.py        # 連續對話測試
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a>├── model_comparison.py         # 模型比較測試
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a>├── auto_test_framework.py      # 自動化測試框架 ⭐
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a>├── html_reporter.py            # HTML 報告生成器
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a>├── llm_test_log_*.json        # 測試記錄檔案
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a>└── llm_test_log_*.html        # HTML 報告檔案
+</code></pre></div></td></tr></table></div>
+<hr />
+<ul>
+<li>
+<h2 id="a7">A7. 額外實用腳本</h2>
+</li>
+<li>
+<h3 id="quick_testpy-"><code>quick_test.py</code>  - 快速測試腳本</h3>
+</li>
+</ul>
+<p>python  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span>
+<span class="normal"><a href="#__codelineno-12-16">16</a></span>
+<span class="normal"><a href="#__codelineno-12-17">17</a></span>
+<span class="normal"><a href="#__codelineno-12-18">18</a></span>
+<span class="normal"><a href="#__codelineno-12-19">19</a></span>
+<span class="normal"><a href="#__codelineno-12-20">20</a></span>
+<span class="normal"><a href="#__codelineno-12-21">21</a></span>
+<span class="normal"><a href="#__codelineno-12-22">22</a></span>
+<span class="normal"><a href="#__codelineno-12-23">23</a></span>
+<span class="normal"><a href="#__codelineno-12-24">24</a></span>
+<span class="normal"><a href="#__codelineno-12-25">25</a></span>
+<span class="normal"><a href="#__codelineno-12-26">26</a></span>
+<span class="normal"><a href="#__codelineno-12-27">27</a></span>
+<span class="normal"><a href="#__codelineno-12-28">28</a></span>
+<span class="normal"><a href="#__codelineno-12-29">29</a></span>
+<span class="normal"><a href="#__codelineno-12-30">30</a></span>
+<span class="normal"><a href="#__codelineno-12-31">31</a></span>
+<span class="normal"><a href="#__codelineno-12-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>*#!/usr/bin/env python3*
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>import ollama
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>import time
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a>import sys
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a>def quick_test(model=&quot;llama2:7b&quot;, prompt=&quot;Hello, how are you?&quot;):
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a>  &quot;&quot;&quot;快速測試指定模型&quot;&quot;&quot;
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a>  print(f&quot;🚀 快速測試: {model}&quot;)
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a>  print(f&quot;📝 提示: {prompt}&quot;)
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a>  print(&quot;-&quot; * 50)
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a>  start_time = time.time()
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a>  try:
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a>      response = ollama.chat(model=model, messages=[
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a>          {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}
+<a id="__codelineno-12-16" name="__codelineno-12-16"></a>      ])
+<a id="__codelineno-12-17" name="__codelineno-12-17"></a>      duration = time.time() - start_time
+<a id="__codelineno-12-18" name="__codelineno-12-18"></a>
+<a id="__codelineno-12-19" name="__codelineno-12-19"></a>      print(f&quot;✅ 成功! 耗時: {duration:.2f} 秒&quot;)
+<a id="__codelineno-12-20" name="__codelineno-12-20"></a>      print(f&quot;📄 回應: {response[&#39;message&#39;][&#39;content&#39;]}&quot;)
+<a id="__codelineno-12-21" name="__codelineno-12-21"></a>
+<a id="__codelineno-12-22" name="__codelineno-12-22"></a>  except Exception as e:
+<a id="__codelineno-12-23" name="__codelineno-12-23"></a>      print(f&quot;❌ 錯誤: {e}&quot;)
+<a id="__codelineno-12-24" name="__codelineno-12-24"></a>
+<a id="__codelineno-12-25" name="__codelineno-12-25"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-12-26" name="__codelineno-12-26"></a>  if len(sys.argv) &gt;= 2:
+<a id="__codelineno-12-27" name="__codelineno-12-27"></a>      model = sys.argv[1]
+<a id="__codelineno-12-28" name="__codelineno-12-28"></a>      prompt = &quot; &quot;.join(sys.argv[2:]) if len(sys.argv) &gt; 2 else &quot;Hello, how are you?&quot;
+<a id="__codelineno-12-29" name="__codelineno-12-29"></a>      quick_test(model, prompt)
+<a id="__codelineno-12-30" name="__codelineno-12-30"></a>  else:
+<a id="__codelineno-12-31" name="__codelineno-12-31"></a>      print(&quot;用法: python3 quick_test.py &lt;model&gt; [prompt]&quot;)
+<a id="__codelineno-12-32" name="__codelineno-12-32"></a>      print(&quot;範例: python3 quick_test.py llama2:7b &#39;What is AI?&#39;&quot;)
+</code></pre></div></td></tr></table></div>
+- ### <code>model_manager.py</code>  - 模型管理腳本</p>
+<p>python  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span>
+<span class="normal"><a href="#__codelineno-13-14">14</a></span>
+<span class="normal"><a href="#__codelineno-13-15">15</a></span>
+<span class="normal"><a href="#__codelineno-13-16">16</a></span>
+<span class="normal"><a href="#__codelineno-13-17">17</a></span>
+<span class="normal"><a href="#__codelineno-13-18">18</a></span>
+<span class="normal"><a href="#__codelineno-13-19">19</a></span>
+<span class="normal"><a href="#__codelineno-13-20">20</a></span>
+<span class="normal"><a href="#__codelineno-13-21">21</a></span>
+<span class="normal"><a href="#__codelineno-13-22">22</a></span>
+<span class="normal"><a href="#__codelineno-13-23">23</a></span>
+<span class="normal"><a href="#__codelineno-13-24">24</a></span>
+<span class="normal"><a href="#__codelineno-13-25">25</a></span>
+<span class="normal"><a href="#__codelineno-13-26">26</a></span>
+<span class="normal"><a href="#__codelineno-13-27">27</a></span>
+<span class="normal"><a href="#__codelineno-13-28">28</a></span>
+<span class="normal"><a href="#__codelineno-13-29">29</a></span>
+<span class="normal"><a href="#__codelineno-13-30">30</a></span>
+<span class="normal"><a href="#__codelineno-13-31">31</a></span>
+<span class="normal"><a href="#__codelineno-13-32">32</a></span>
+<span class="normal"><a href="#__codelineno-13-33">33</a></span>
+<span class="normal"><a href="#__codelineno-13-34">34</a></span>
+<span class="normal"><a href="#__codelineno-13-35">35</a></span>
+<span class="normal"><a href="#__codelineno-13-36">36</a></span>
+<span class="normal"><a href="#__codelineno-13-37">37</a></span>
+<span class="normal"><a href="#__codelineno-13-38">38</a></span>
+<span class="normal"><a href="#__codelineno-13-39">39</a></span>
+<span class="normal"><a href="#__codelineno-13-40">40</a></span>
+<span class="normal"><a href="#__codelineno-13-41">41</a></span>
+<span class="normal"><a href="#__codelineno-13-42">42</a></span>
+<span class="normal"><a href="#__codelineno-13-43">43</a></span>
+<span class="normal"><a href="#__codelineno-13-44">44</a></span>
+<span class="normal"><a href="#__codelineno-13-45">45</a></span>
+<span class="normal"><a href="#__codelineno-13-46">46</a></span>
+<span class="normal"><a href="#__codelineno-13-47">47</a></span>
+<span class="normal"><a href="#__codelineno-13-48">48</a></span>
+<span class="normal"><a href="#__codelineno-13-49">49</a></span>
+<span class="normal"><a href="#__codelineno-13-50">50</a></span>
+<span class="normal"><a href="#__codelineno-13-51">51</a></span>
+<span class="normal"><a href="#__codelineno-13-52">52</a></span>
+<span class="normal"><a href="#__codelineno-13-53">53</a></span>
+<span class="normal"><a href="#__codelineno-13-54">54</a></span>
+<span class="normal"><a href="#__codelineno-13-55">55</a></span>
+<span class="normal"><a href="#__codelineno-13-56">56</a></span>
+<span class="normal"><a href="#__codelineno-13-57">57</a></span>
+<span class="normal"><a href="#__codelineno-13-58">58</a></span>
+<span class="normal"><a href="#__codelineno-13-59">59</a></span>
+<span class="normal"><a href="#__codelineno-13-60">60</a></span>
+<span class="normal"><a href="#__codelineno-13-61">61</a></span>
+<span class="normal"><a href="#__codelineno-13-62">62</a></span>
+<span class="normal"><a href="#__codelineno-13-63">63</a></span>
+<span class="normal"><a href="#__codelineno-13-64">64</a></span>
+<span class="normal"><a href="#__codelineno-13-65">65</a></span>
+<span class="normal"><a href="#__codelineno-13-66">66</a></span>
+<span class="normal"><a href="#__codelineno-13-67">67</a></span>
+<span class="normal"><a href="#__codelineno-13-68">68</a></span>
+<span class="normal"><a href="#__codelineno-13-69">69</a></span>
+<span class="normal"><a href="#__codelineno-13-70">70</a></span>
+<span class="normal"><a href="#__codelineno-13-71">71</a></span>
+<span class="normal"><a href="#__codelineno-13-72">72</a></span>
+<span class="normal"><a href="#__codelineno-13-73">73</a></span>
+<span class="normal"><a href="#__codelineno-13-74">74</a></span>
+<span class="normal"><a href="#__codelineno-13-75">75</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a>*#!/usr/bin/env python3*
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>import ollama
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>import subprocess
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a>import json
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a>def list_models():
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a>  &quot;&quot;&quot;列出所有已下載的模型&quot;&quot;&quot;
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a>  try:
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a>      result = subprocess.run([&#39;ollama&#39;, &#39;list&#39;], capture_output=True, text=True)
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a>      print(&quot;📦 已下載的模型:&quot;)
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a>      print(result.stdout)
+<a id="__codelineno-13-12" name="__codelineno-13-12"></a>  except Exception as e:
+<a id="__codelineno-13-13" name="__codelineno-13-13"></a>      print(f&quot;❌ 無法獲取模型列表: {e}&quot;)
+<a id="__codelineno-13-14" name="__codelineno-13-14"></a>
+<a id="__codelineno-13-15" name="__codelineno-13-15"></a>def download_model(model_name):
+<a id="__codelineno-13-16" name="__codelineno-13-16"></a>  &quot;&quot;&quot;下載指定模型&quot;&quot;&quot;
+<a id="__codelineno-13-17" name="__codelineno-13-17"></a>  print(f&quot;⬇️  正在下載模型: {model_name}&quot;)
+<a id="__codelineno-13-18" name="__codelineno-13-18"></a>  try:
+<a id="__codelineno-13-19" name="__codelineno-13-19"></a>      result = subprocess.run([&#39;ollama&#39;, &#39;pull&#39;, model_name], check=True)
+<a id="__codelineno-13-20" name="__codelineno-13-20"></a>      print(f&quot;✅ 模型 {model_name} 下載完成!&quot;)
+<a id="__codelineno-13-21" name="__codelineno-13-21"></a>  except subprocess.CalledProcessError as e:
+<a id="__codelineno-13-22" name="__codelineno-13-22"></a>      print(f&quot;❌ 下載失敗: {e}&quot;)
+<a id="__codelineno-13-23" name="__codelineno-13-23"></a>
+<a id="__codelineno-13-24" name="__codelineno-13-24"></a>def remove_model(model_name):
+<a id="__codelineno-13-25" name="__codelineno-13-25"></a>  &quot;&quot;&quot;刪除指定模型&quot;&quot;&quot;
+<a id="__codelineno-13-26" name="__codelineno-13-26"></a>  confirm = input(f&quot;確定要刪除模型 {model_name}? (y/N): &quot;)
+<a id="__codelineno-13-27" name="__codelineno-13-27"></a>  if confirm.lower() == &#39;y&#39;:
+<a id="__codelineno-13-28" name="__codelineno-13-28"></a>      try:
+<a id="__codelineno-13-29" name="__codelineno-13-29"></a>          result = subprocess.run([&#39;ollama&#39;, &#39;rm&#39;, model_name], check=True)
+<a id="__codelineno-13-30" name="__codelineno-13-30"></a>          print(f&quot;✅ 模型 {model_name} 已刪除!&quot;)
+<a id="__codelineno-13-31" name="__codelineno-13-31"></a>      except subprocess.CalledProcessError as e:
+<a id="__codelineno-13-32" name="__codelineno-13-32"></a>          print(f&quot;❌ 刪除失敗: {e}&quot;)
+<a id="__codelineno-13-33" name="__codelineno-13-33"></a>
+<a id="__codelineno-13-34" name="__codelineno-13-34"></a>def model_info(model_name):
+<a id="__codelineno-13-35" name="__codelineno-13-35"></a>  &quot;&quot;&quot;顯示模型資訊&quot;&quot;&quot;
+<a id="__codelineno-13-36" name="__codelineno-13-36"></a>  try:
+<a id="__codelineno-13-37" name="__codelineno-13-37"></a>      result = subprocess.run([&#39;ollama&#39;, &#39;show&#39;, model_name], capture_output=True, text=True)
+<a id="__codelineno-13-38" name="__codelineno-13-38"></a>      print(f&quot;📋 模型 {model_name} 資訊:&quot;)
+<a id="__codelineno-13-39" name="__codelineno-13-39"></a>      print(result.stdout)
+<a id="__codelineno-13-40" name="__codelineno-13-40"></a>  except Exception as e:
+<a id="__codelineno-13-41" name="__codelineno-13-41"></a>      print(f&quot;❌ 無法獲取模型資訊: {e}&quot;)
+<a id="__codelineno-13-42" name="__codelineno-13-42"></a>
+<a id="__codelineno-13-43" name="__codelineno-13-43"></a>def main():
+<a id="__codelineno-13-44" name="__codelineno-13-44"></a>  while True:
+<a id="__codelineno-13-45" name="__codelineno-13-45"></a>      print(&quot;\n&quot; + &quot;=&quot;*50)
+<a id="__codelineno-13-46" name="__codelineno-13-46"></a>      print(&quot;🤖 Ollama 模型管理器&quot;)
+<a id="__codelineno-13-47" name="__codelineno-13-47"></a>      print(&quot;=&quot;*50)
+<a id="__codelineno-13-48" name="__codelineno-13-48"></a>      print(&quot;1. 列出模型&quot;)
+<a id="__codelineno-13-49" name="__codelineno-13-49"></a>      print(&quot;2. 下載模型&quot;)
+<a id="__codelineno-13-50" name="__codelineno-13-50"></a>      print(&quot;3. 刪除模型&quot;)
+<a id="__codelineno-13-51" name="__codelineno-13-51"></a>      print(&quot;4. 模型資訊&quot;)
+<a id="__codelineno-13-52" name="__codelineno-13-52"></a>      print(&quot;5. 退出&quot;)
+<a id="__codelineno-13-53" name="__codelineno-13-53"></a>
+<a id="__codelineno-13-54" name="__codelineno-13-54"></a>      choice = input(&quot;\n請選擇操作 (1-5): &quot;)
+<a id="__codelineno-13-55" name="__codelineno-13-55"></a>
+<a id="__codelineno-13-56" name="__codelineno-13-56"></a>      if choice == &#39;1&#39;:
+<a id="__codelineno-13-57" name="__codelineno-13-57"></a>          list_models()
+<a id="__codelineno-13-58" name="__codelineno-13-58"></a>      elif choice == &#39;2&#39;:
+<a id="__codelineno-13-59" name="__codelineno-13-59"></a>          model = input(&quot;請輸入模型名稱 (例如 llama2:7b): &quot;)
+<a id="__codelineno-13-60" name="__codelineno-13-60"></a>          download_model(model)
+<a id="__codelineno-13-61" name="__codelineno-13-61"></a>      elif choice == &#39;3&#39;:
+<a id="__codelineno-13-62" name="__codelineno-13-62"></a>          list_models()
+<a id="__codelineno-13-63" name="__codelineno-13-63"></a>          model = input(&quot;請輸入要刪除的模型名稱: &quot;)
+<a id="__codelineno-13-64" name="__codelineno-13-64"></a>          remove_model(model)
+<a id="__codelineno-13-65" name="__codelineno-13-65"></a>      elif choice == &#39;4&#39;:
+<a id="__codelineno-13-66" name="__codelineno-13-66"></a>          model = input(&quot;請輸入模型名稱: &quot;)
+<a id="__codelineno-13-67" name="__codelineno-13-67"></a>          model_info(model)
+<a id="__codelineno-13-68" name="__codelineno-13-68"></a>      elif choice == &#39;5&#39;:
+<a id="__codelineno-13-69" name="__codelineno-13-69"></a>          print(&quot;👋 再見!&quot;)
+<a id="__codelineno-13-70" name="__codelineno-13-70"></a>          break
+<a id="__codelineno-13-71" name="__codelineno-13-71"></a>      else:
+<a id="__codelineno-13-72" name="__codelineno-13-72"></a>          print(&quot;❌ 無效選擇，請重試&quot;)
+<a id="__codelineno-13-73" name="__codelineno-13-73"></a>
+<a id="__codelineno-13-74" name="__codelineno-13-74"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-13-75" name="__codelineno-13-75"></a>  main()
+</code></pre></div></td></tr></table></div>
+- ### <code>system_health.py</code>  - 系統健康檢查</p>
+<p>python  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-14-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-14-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-14-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-14-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-14-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-14-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-14-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-14-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-14-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-14-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-14-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-14-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-14-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-14-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-14-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-14-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-14-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-14-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-14-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-14-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-14-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-14-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-14-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-14-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-14-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-14-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-14-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-14-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-14-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-14-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-14-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-14-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-14-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-14-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-14-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-14-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-14-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-14-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-14-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-14-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-14-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-14-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-14-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-14-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-14-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-14-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-14-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-14-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-14-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-14-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-14-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-14-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-14-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-14-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-14-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-14-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-14-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-14-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-14-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-14-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-14-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-14-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-14-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-14-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-14-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-14-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-14-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-14-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-14-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-14-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-14-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-14-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-14-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-14-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-14-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-14-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-14-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-14-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-14-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-14-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-14-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-14-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-14-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-14-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-14-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-14-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-14-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-14-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-14-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-14-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-14-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-14-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-14-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-14-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-14-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-14-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-14-100">100</a></span>
+<span class="normal"><a href="#__codelineno-14-101">101</a></span>
+<span class="normal"><a href="#__codelineno-14-102">102</a></span>
+<span class="normal"><a href="#__codelineno-14-103">103</a></span>
+<span class="normal"><a href="#__codelineno-14-104">104</a></span>
+<span class="normal"><a href="#__codelineno-14-105">105</a></span>
+<span class="normal"><a href="#__codelineno-14-106">106</a></span>
+<span class="normal"><a href="#__codelineno-14-107">107</a></span>
+<span class="normal"><a href="#__codelineno-14-108">108</a></span>
+<span class="normal"><a href="#__codelineno-14-109">109</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>*#!/usr/bin/env python3*
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a>import subprocess
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a>import psutil
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a>import time
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a>from datetime import datetime
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a>def check_ollama_service():
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a>  &quot;&quot;&quot;檢查 Ollama 服務狀態&quot;&quot;&quot;
+<a id="__codelineno-14-9" name="__codelineno-14-9"></a>  try:
+<a id="__codelineno-14-10" name="__codelineno-14-10"></a>      result = subprocess.run([&#39;ollama&#39;, &#39;list&#39;], capture_output=True, text=True, timeout=5)
+<a id="__codelineno-14-11" name="__codelineno-14-11"></a>      return True, &quot;Ollama 服務正常&quot;
+<a id="__codelineno-14-12" name="__codelineno-14-12"></a>  except subprocess.TimeoutExpired:
+<a id="__codelineno-14-13" name="__codelineno-14-13"></a>      return False, &quot;Ollama 服務回應超時&quot;
+<a id="__codelineno-14-14" name="__codelineno-14-14"></a>  except Exception as e:
+<a id="__codelineno-14-15" name="__codelineno-14-15"></a>      return False, f&quot;Ollama 服務異常: {e}&quot;
+<a id="__codelineno-14-16" name="__codelineno-14-16"></a>
+<a id="__codelineno-14-17" name="__codelineno-14-17"></a>def check_gpu_status():
+<a id="__codelineno-14-18" name="__codelineno-14-18"></a>  &quot;&quot;&quot;檢查 GPU 狀態&quot;&quot;&quot;
+<a id="__codelineno-14-19" name="__codelineno-14-19"></a>  try:
+<a id="__codelineno-14-20" name="__codelineno-14-20"></a>      result = subprocess.run([
+<a id="__codelineno-14-21" name="__codelineno-14-21"></a>          &#39;nvidia-smi&#39;, &#39;--query-gpu=name,temperature.gpu,utilization.gpu&#39;,
+<a id="__codelineno-14-22" name="__codelineno-14-22"></a>          &#39;--format=csv,noheader,nounits&#39;
+<a id="__codelineno-14-23" name="__codelineno-14-23"></a>      ], capture_output=True, text=True, timeout=5)
+<a id="__codelineno-14-24" name="__codelineno-14-24"></a>
+<a id="__codelineno-14-25" name="__codelineno-14-25"></a>      if result.returncode == 0:
+<a id="__codelineno-14-26" name="__codelineno-14-26"></a>          gpu_info = result.stdout.strip().split(&#39;, &#39;)
+<a id="__codelineno-14-27" name="__codelineno-14-27"></a>          temp = float(gpu_info[1])
+<a id="__codelineno-14-28" name="__codelineno-14-28"></a>          util = float(gpu_info[2])
+<a id="__codelineno-14-29" name="__codelineno-14-29"></a>
+<a id="__codelineno-14-30" name="__codelineno-14-30"></a>          status = &quot;正常&quot;
+<a id="__codelineno-14-31" name="__codelineno-14-31"></a>          if temp &gt; 80:
+<a id="__codelineno-14-32" name="__codelineno-14-32"></a>              status = &quot;溫度過高&quot;
+<a id="__codelineno-14-33" name="__codelineno-14-33"></a>          elif util &gt; 95:
+<a id="__codelineno-14-34" name="__codelineno-14-34"></a>              status = &quot;使用率過高&quot;
+<a id="__codelineno-14-35" name="__codelineno-14-35"></a>
+<a id="__codelineno-14-36" name="__codelineno-14-36"></a>          return True, f&quot;GPU {status} - 溫度: {temp}°C, 使用率: {util}%&quot;
+<a id="__codelineno-14-37" name="__codelineno-14-37"></a>      else:
+<a id="__codelineno-14-38" name="__codelineno-14-38"></a>          return False, &quot;無法獲取 GPU 資訊&quot;
+<a id="__codelineno-14-39" name="__codelineno-14-39"></a>  except Exception as e:
+<a id="__codelineno-14-40" name="__codelineno-14-40"></a>      return False, f&quot;GPU 檢查失敗: {e}&quot;
+<a id="__codelineno-14-41" name="__codelineno-14-41"></a>
+<a id="__codelineno-14-42" name="__codelineno-14-42"></a>def check_system_resources():
+<a id="__codelineno-14-43" name="__codelineno-14-43"></a>  &quot;&quot;&quot;檢查系統資源&quot;&quot;&quot;
+<a id="__codelineno-14-44" name="__codelineno-14-44"></a>  try:
+<a id="__codelineno-14-45" name="__codelineno-14-45"></a>      *# 記憶體檢查*
+<a id="__codelineno-14-46" name="__codelineno-14-46"></a>      memory = psutil.virtual_memory()
+<a id="__codelineno-14-47" name="__codelineno-14-47"></a>      mem_status = &quot;正常&quot;
+<a id="__codelineno-14-48" name="__codelineno-14-48"></a>      if memory.percent &gt; 90:
+<a id="__codelineno-14-49" name="__codelineno-14-49"></a>          mem_status = &quot;記憶體不足&quot;
+<a id="__codelineno-14-50" name="__codelineno-14-50"></a>      elif memory.percent &gt; 80:
+<a id="__codelineno-14-51" name="__codelineno-14-51"></a>          mem_status = &quot;記憶體使用率高&quot;
+<a id="__codelineno-14-52" name="__codelineno-14-52"></a>
+<a id="__codelineno-14-53" name="__codelineno-14-53"></a>      *# CPU 檢查*
+<a id="__codelineno-14-54" name="__codelineno-14-54"></a>      cpu_percent = psutil.cpu_percent(interval=1)
+<a id="__codelineno-14-55" name="__codelineno-14-55"></a>      cpu_status = &quot;正常&quot;
+<a id="__codelineno-14-56" name="__codelineno-14-56"></a>      if cpu_percent &gt; 90:
+<a id="__codelineno-14-57" name="__codelineno-14-57"></a>          cpu_status = &quot;CPU 使用率過高&quot;
+<a id="__codelineno-14-58" name="__codelineno-14-58"></a>      elif cpu_percent &gt; 80:
+<a id="__codelineno-14-59" name="__codelineno-14-59"></a>          cpu_status = &quot;CPU 使用率高&quot;
+<a id="__codelineno-14-60" name="__codelineno-14-60"></a>
+<a id="__codelineno-14-61" name="__codelineno-14-61"></a>      *# 磁碟檢查*
+<a id="__codelineno-14-62" name="__codelineno-14-62"></a>      disk = psutil.disk_usage(&#39;/&#39;)
+<a id="__codelineno-14-63" name="__codelineno-14-63"></a>      disk_status = &quot;正常&quot;
+<a id="__codelineno-14-64" name="__codelineno-14-64"></a>      if disk.percent &gt; 90:
+<a id="__codelineno-14-65" name="__codelineno-14-65"></a>          disk_status = &quot;磁碟空間不足&quot;
+<a id="__codelineno-14-66" name="__codelineno-14-66"></a>      elif disk.percent &gt; 80:
+<a id="__codelineno-14-67" name="__codelineno-14-67"></a>          disk_status = &quot;磁碟使用率高&quot;
+<a id="__codelineno-14-68" name="__codelineno-14-68"></a>
+<a id="__codelineno-14-69" name="__codelineno-14-69"></a>      return True, f&quot;系統資源 {mem_status} - RAM: {memory.percent:.1f}%, CPU: {cpu_percent:.1f}%, 磁碟: {disk.percent:.1f}%&quot;
+<a id="__codelineno-14-70" name="__codelineno-14-70"></a>
+<a id="__codelineno-14-71" name="__codelineno-14-71"></a>  except Exception as e:
+<a id="__codelineno-14-72" name="__codelineno-14-72"></a>      return False, f&quot;系統檢查失敗: {e}&quot;
+<a id="__codelineno-14-73" name="__codelineno-14-73"></a>
+<a id="__codelineno-14-74" name="__codelineno-14-74"></a>def health_check():
+<a id="__codelineno-14-75" name="__codelineno-14-75"></a>  &quot;&quot;&quot;執行完整健康檢查&quot;&quot;&quot;
+<a id="__codelineno-14-76" name="__codelineno-14-76"></a>  print(&quot;🏥 系統健康檢查&quot;)
+<a id="__codelineno-14-77" name="__codelineno-14-77"></a>  print(&quot;=&quot; * 50)
+<a id="__codelineno-14-78" name="__codelineno-14-78"></a>  print(f&quot;檢查時間: {datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S&#39;)}&quot;)
+<a id="__codelineno-14-79" name="__codelineno-14-79"></a>  print()
+<a id="__codelineno-14-80" name="__codelineno-14-80"></a>
+<a id="__codelineno-14-81" name="__codelineno-14-81"></a>  checks = [
+<a id="__codelineno-14-82" name="__codelineno-14-82"></a>      (&quot;Ollama 服務&quot;, check_ollama_service),
+<a id="__codelineno-14-83" name="__codelineno-14-83"></a>      (&quot;GPU 狀態&quot;, check_gpu_status),
+<a id="__codelineno-14-84" name="__codelineno-14-84"></a>      (&quot;系統資源&quot;, check_system_resources)
+<a id="__codelineno-14-85" name="__codelineno-14-85"></a>  ]
+<a id="__codelineno-14-86" name="__codelineno-14-86"></a>
+<a id="__codelineno-14-87" name="__codelineno-14-87"></a>  all_healthy = True
+<a id="__codelineno-14-88" name="__codelineno-14-88"></a>
+<a id="__codelineno-14-89" name="__codelineno-14-89"></a>  for check_name, check_func in checks:
+<a id="__codelineno-14-90" name="__codelineno-14-90"></a>      try:
+<a id="__codelineno-14-91" name="__codelineno-14-91"></a>          is_ok, message = check_func()
+<a id="__codelineno-14-92" name="__codelineno-14-92"></a>          status_icon = &quot;✅&quot; if is_ok else &quot;❌&quot;
+<a id="__codelineno-14-93" name="__codelineno-14-93"></a>          print(f&quot;{status_icon} {check_name}: {message}&quot;)
+<a id="__codelineno-14-94" name="__codelineno-14-94"></a>          if not is_ok:
+<a id="__codelineno-14-95" name="__codelineno-14-95"></a>              all_healthy = False
+<a id="__codelineno-14-96" name="__codelineno-14-96"></a>      except Exception as e:
+<a id="__codelineno-14-97" name="__codelineno-14-97"></a>          print(f&quot;❌ {check_name}: 檢查過程發生錯誤 - {e}&quot;)
+<a id="__codelineno-14-98" name="__codelineno-14-98"></a>          all_healthy = False
+<a id="__codelineno-14-99" name="__codelineno-14-99"></a>
+<a id="__codelineno-14-100" name="__codelineno-14-100"></a>  print()
+<a id="__codelineno-14-101" name="__codelineno-14-101"></a>  if all_healthy:
+<a id="__codelineno-14-102" name="__codelineno-14-102"></a>      print(&quot;🎉 系統狀態良好!&quot;)
+<a id="__codelineno-14-103" name="__codelineno-14-103"></a>  else:
+<a id="__codelineno-14-104" name="__codelineno-14-104"></a>      print(&quot;⚠️  發現問題，請檢查上述項目&quot;)
+<a id="__codelineno-14-105" name="__codelineno-14-105"></a>
+<a id="__codelineno-14-106" name="__codelineno-14-106"></a>  return all_healthy
+<a id="__codelineno-14-107" name="__codelineno-14-107"></a>
+<a id="__codelineno-14-108" name="__codelineno-14-108"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-14-109" name="__codelineno-14-109"></a>  health_check()
+</code></pre></div></td></tr></table></div>
+- ### <code>benchmark.py</code>  - 效能基準測試</p>
+<p>python  </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-15-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-15-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-15-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-15-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-15-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-15-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-15-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-15-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-15-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-15-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-15-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-15-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-15-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-15-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-15-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-15-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-15-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-15-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-15-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-15-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-15-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-15-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-15-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-15-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-15-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-15-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-15-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-15-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-15-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-15-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-15-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-15-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-15-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-15-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-15-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-15-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-15-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-15-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-15-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-15-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-15-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-15-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-15-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-15-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-15-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-15-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-15-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-15-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-15-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-15-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-15-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-15-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-15-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-15-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-15-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-15-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-15-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-15-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-15-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-15-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-15-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-15-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-15-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-15-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-15-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-15-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-15-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-15-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-15-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-15-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-15-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-15-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-15-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-15-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-15-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-15-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-15-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-15-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-15-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-15-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-15-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-15-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-15-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-15-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-15-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-15-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-15-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-15-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-15-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-15-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-15-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-15-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-15-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-15-100">100</a></span>
+<span class="normal"><a href="#__codelineno-15-101">101</a></span>
+<span class="normal"><a href="#__codelineno-15-102">102</a></span>
+<span class="normal"><a href="#__codelineno-15-103">103</a></span>
+<span class="normal"><a href="#__codelineno-15-104">104</a></span>
+<span class="normal"><a href="#__codelineno-15-105">105</a></span>
+<span class="normal"><a href="#__codelineno-15-106">106</a></span>
+<span class="normal"><a href="#__codelineno-15-107">107</a></span>
+<span class="normal"><a href="#__codelineno-15-108">108</a></span>
+<span class="normal"><a href="#__codelineno-15-109">109</a></span>
+<span class="normal"><a href="#__codelineno-15-110">110</a></span>
+<span class="normal"><a href="#__codelineno-15-111">111</a></span>
+<span class="normal"><a href="#__codelineno-15-112">112</a></span>
+<span class="normal"><a href="#__codelineno-15-113">113</a></span>
+<span class="normal"><a href="#__codelineno-15-114">114</a></span>
+<span class="normal"><a href="#__codelineno-15-115">115</a></span>
+<span class="normal"><a href="#__codelineno-15-116">116</a></span>
+<span class="normal"><a href="#__codelineno-15-117">117</a></span>
+<span class="normal"><a href="#__codelineno-15-118">118</a></span>
+<span class="normal"><a href="#__codelineno-15-119">119</a></span>
+<span class="normal"><a href="#__codelineno-15-120">120</a></span>
+<span class="normal"><a href="#__codelineno-15-121">121</a></span>
+<span class="normal"><a href="#__codelineno-15-122">122</a></span>
+<span class="normal"><a href="#__codelineno-15-123">123</a></span>
+<span class="normal"><a href="#__codelineno-15-124">124</a></span>
+<span class="normal"><a href="#__codelineno-15-125">125</a></span>
+<span class="normal"><a href="#__codelineno-15-126">126</a></span>
+<span class="normal"><a href="#__codelineno-15-127">127</a></span>
+<span class="normal"><a href="#__codelineno-15-128">128</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>*#!/usr/bin/env python3*
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a>import ollama
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a>import time
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a>import statistics
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a>import json
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a>from datetime import datetime
+<a id="__codelineno-15-7" name="__codelineno-15-7"></a>
+<a id="__codelineno-15-8" name="__codelineno-15-8"></a>def run_benchmark(model=&quot;llama2:7b&quot;, iterations=5):
+<a id="__codelineno-15-9" name="__codelineno-15-9"></a>  &quot;&quot;&quot;執行效能基準測試&quot;&quot;&quot;
+<a id="__codelineno-15-10" name="__codelineno-15-10"></a>
+<a id="__codelineno-15-11" name="__codelineno-15-11"></a>  test_prompts = [
+<a id="__codelineno-15-12" name="__codelineno-15-12"></a>      &quot;What is 2+2?&quot;,
+<a id="__codelineno-15-13" name="__codelineno-15-13"></a>      &quot;Explain gravity in one sentence&quot;,
+<a id="__codelineno-15-14" name="__codelineno-15-14"></a>      &quot;List 3 programming languages&quot;,
+<a id="__codelineno-15-15" name="__codelineno-15-15"></a>      &quot;What is the capital of France?&quot;,
+<a id="__codelineno-15-16" name="__codelineno-15-16"></a>      &quot;Write a short haiku&quot;
+<a id="__codelineno-15-17" name="__codelineno-15-17"></a>  ]
+<a id="__codelineno-15-18" name="__codelineno-15-18"></a>
+<a id="__codelineno-15-19" name="__codelineno-15-19"></a>  print(f&quot;🏃 開始基準測試: {model}&quot;)
+<a id="__codelineno-15-20" name="__codelineno-15-20"></a>  print(f&quot;📊 測試次數: {iterations} 輪&quot;)
+<a id="__codelineno-15-21" name="__codelineno-15-21"></a>  print(f&quot;📝 測試項目: {len(test_prompts)} 個&quot;)
+<a id="__codelineno-15-22" name="__codelineno-15-22"></a>  print(&quot;=&quot; * 60)
+<a id="__codelineno-15-23" name="__codelineno-15-23"></a>
+<a id="__codelineno-15-24" name="__codelineno-15-24"></a>  all_results = []
+<a id="__codelineno-15-25" name="__codelineno-15-25"></a>
+<a id="__codelineno-15-26" name="__codelineno-15-26"></a>  for round_num in range(1, iterations + 1):
+<a id="__codelineno-15-27" name="__codelineno-15-27"></a>      print(f&quot;\n第 {round_num} 輪測試:&quot;)
+<a id="__codelineno-15-28" name="__codelineno-15-28"></a>      round_results = []
+<a id="__codelineno-15-29" name="__codelineno-15-29"></a>
+<a id="__codelineno-15-30" name="__codelineno-15-30"></a>      for i, prompt in enumerate(test_prompts, 1):
+<a id="__codelineno-15-31" name="__codelineno-15-31"></a>          print(f&quot;  測試 {i}/5: &quot;, end=&quot;&quot;, flush=True)
+<a id="__codelineno-15-32" name="__codelineno-15-32"></a>
+<a id="__codelineno-15-33" name="__codelineno-15-33"></a>          start_time = time.time()
+<a id="__codelineno-15-34" name="__codelineno-15-34"></a>          try:
+<a id="__codelineno-15-35" name="__codelineno-15-35"></a>              response = ollama.chat(model=model, messages=[
+<a id="__codelineno-15-36" name="__codelineno-15-36"></a>                  {&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}
+<a id="__codelineno-15-37" name="__codelineno-15-37"></a>              ])
+<a id="__codelineno-15-38" name="__codelineno-15-38"></a>              duration = time.time() - start_time
+<a id="__codelineno-15-39" name="__codelineno-15-39"></a>              response_length = len(response[&#39;message&#39;][&#39;content&#39;])
+<a id="__codelineno-15-40" name="__codelineno-15-40"></a>              tokens_per_sec = response_length / duration
+<a id="__codelineno-15-41" name="__codelineno-15-41"></a>
+<a id="__codelineno-15-42" name="__codelineno-15-42"></a>              round_results.append({
+<a id="__codelineno-15-43" name="__codelineno-15-43"></a>                  &#39;prompt&#39;: prompt,
+<a id="__codelineno-15-44" name="__codelineno-15-44"></a>                  &#39;duration&#39;: duration,
+<a id="__codelineno-15-45" name="__codelineno-15-45"></a>                  &#39;response_length&#39;: response_length,
+<a id="__codelineno-15-46" name="__codelineno-15-46"></a>                  &#39;tokens_per_sec&#39;: tokens_per_sec,
+<a id="__codelineno-15-47" name="__codelineno-15-47"></a>                  &#39;success&#39;: True
+<a id="__codelineno-15-48" name="__codelineno-15-48"></a>              })
+<a id="__codelineno-15-49" name="__codelineno-15-49"></a>
+<a id="__codelineno-15-50" name="__codelineno-15-50"></a>              print(f&quot;{duration:.2f}s ✅&quot;)
+<a id="__codelineno-15-51" name="__codelineno-15-51"></a>
+<a id="__codelineno-15-52" name="__codelineno-15-52"></a>          except Exception as e:
+<a id="__codelineno-15-53" name="__codelineno-15-53"></a>              round_results.append({
+<a id="__codelineno-15-54" name="__codelineno-15-54"></a>                  &#39;prompt&#39;: prompt,
+<a id="__codelineno-15-55" name="__codelineno-15-55"></a>                  &#39;duration&#39;: None,
+<a id="__codelineno-15-56" name="__codelineno-15-56"></a>                  &#39;response_length&#39;: 0,
+<a id="__codelineno-15-57" name="__codelineno-15-57"></a>                  &#39;tokens_per_sec&#39;: 0,
+<a id="__codelineno-15-58" name="__codelineno-15-58"></a>                  &#39;success&#39;: False,
+<a id="__codelineno-15-59" name="__codelineno-15-59"></a>                  &#39;error&#39;: str(e)
+<a id="__codelineno-15-60" name="__codelineno-15-60"></a>              })
+<a id="__codelineno-15-61" name="__codelineno-15-61"></a>              print(f&quot;失敗 ❌&quot;)
+<a id="__codelineno-15-62" name="__codelineno-15-62"></a>
+<a id="__codelineno-15-63" name="__codelineno-15-63"></a>      all_results.append(round_results)
+<a id="__codelineno-15-64" name="__codelineno-15-64"></a>
+<a id="__codelineno-15-65" name="__codelineno-15-65"></a>      *# 顯示本輪統計*
+<a id="__codelineno-15-66" name="__codelineno-15-66"></a>      successful = [r for r in round_results if r[&#39;success&#39;]]
+<a id="__codelineno-15-67" name="__codelineno-15-67"></a>      if successful:
+<a id="__codelineno-15-68" name="__codelineno-15-68"></a>          avg_duration = statistics.mean([r[&#39;duration&#39;] for r in successful])
+<a id="__codelineno-15-69" name="__codelineno-15-69"></a>          avg_tokens = statistics.mean([r[&#39;tokens_per_sec&#39;] for r in successful])
+<a id="__codelineno-15-70" name="__codelineno-15-70"></a>          print(f&quot;  本輪平均: {avg_duration:.2f}s, {avg_tokens:.1f} 字元/秒&quot;)
+<a id="__codelineno-15-71" name="__codelineno-15-71"></a>
+<a id="__codelineno-15-72" name="__codelineno-15-72"></a>  *# 計算總體統計*
+<a id="__codelineno-15-73" name="__codelineno-15-73"></a>  print(&quot;\n&quot; + &quot;=&quot; * 60)
+<a id="__codelineno-15-74" name="__codelineno-15-74"></a>  print(&quot;📈 基準測試結果&quot;)
+<a id="__codelineno-15-75" name="__codelineno-15-75"></a>  print(&quot;=&quot; * 60)
+<a id="__codelineno-15-76" name="__codelineno-15-76"></a>
+<a id="__codelineno-15-77" name="__codelineno-15-77"></a>  all_successful = []
+<a id="__codelineno-15-78" name="__codelineno-15-78"></a>  for round_results in all_results:
+<a id="__codelineno-15-79" name="__codelineno-15-79"></a>      all_successful.extend([r for r in round_results if r[&#39;success&#39;]])
+<a id="__codelineno-15-80" name="__codelineno-15-80"></a>
+<a id="__codelineno-15-81" name="__codelineno-15-81"></a>  if all_successful:
+<a id="__codelineno-15-82" name="__codelineno-15-82"></a>      durations = [r[&#39;duration&#39;] for r in all_successful]
+<a id="__codelineno-15-83" name="__codelineno-15-83"></a>      tokens_per_sec = [r[&#39;tokens_per_sec&#39;] for r in all_successful]
+<a id="__codelineno-15-84" name="__codelineno-15-84"></a>
+<a id="__codelineno-15-85" name="__codelineno-15-85"></a>      stats = {
+<a id="__codelineno-15-86" name="__codelineno-15-86"></a>          &#39;model&#39;: model,
+<a id="__codelineno-15-87" name="__codelineno-15-87"></a>          &#39;timestamp&#39;: datetime.now().isoformat(),
+<a id="__codelineno-15-88" name="__codelineno-15-88"></a>          &#39;total_tests&#39;: len(all_successful),
+<a id="__codelineno-15-89" name="__codelineno-15-89"></a>          &#39;iterations&#39;: iterations,
+<a id="__codelineno-15-90" name="__codelineno-15-90"></a>          &#39;avg_duration&#39;: statistics.mean(durations),
+<a id="__codelineno-15-91" name="__codelineno-15-91"></a>          &#39;min_duration&#39;: min(durations),
+<a id="__codelineno-15-92" name="__codelineno-15-92"></a>          &#39;max_duration&#39;: max(durations),
+<a id="__codelineno-15-93" name="__codelineno-15-93"></a>          &#39;std_duration&#39;: statistics.stdev(durations) if len(durations) &gt; 1 else 0,
+<a id="__codelineno-15-94" name="__codelineno-15-94"></a>          &#39;avg_tokens_per_sec&#39;: statistics.mean(tokens_per_sec),
+<a id="__codelineno-15-95" name="__codelineno-15-95"></a>          &#39;min_tokens_per_sec&#39;: min(tokens_per_sec),
+<a id="__codelineno-15-96" name="__codelineno-15-96"></a>          &#39;max_tokens_per_sec&#39;: max(tokens_per_sec),
+<a id="__codelineno-15-97" name="__codelineno-15-97"></a>          &#39;std_tokens_per_sec&#39;: statistics.stdev(tokens_per_sec) if len(tokens_per_sec) &gt; 1 else 0
+<a id="__codelineno-15-98" name="__codelineno-15-98"></a>      }
+<a id="__codelineno-15-99" name="__codelineno-15-99"></a>
+<a id="__codelineno-15-100" name="__codelineno-15-100"></a>      print(f&quot;模型: {model}&quot;)
+<a id="__codelineno-15-101" name="__codelineno-15-101"></a>      print(f&quot;總測試次數: {stats[&#39;total_tests&#39;]}&quot;)
+<a id="__codelineno-15-102" name="__codelineno-15-102"></a>      print(f&quot;平均回應時間: {stats[&#39;avg_duration&#39;]:.2f} ± {stats[&#39;std_duration&#39;]:.2f} 秒&quot;)
+<a id="__codelineno-15-103" name="__codelineno-15-103"></a>      print(f&quot;最快回應: {stats[&#39;min_duration&#39;]:.2f} 秒&quot;)
+<a id="__codelineno-15-104" name="__codelineno-15-104"></a>      print(f&quot;最慢回應: {stats[&#39;max_duration&#39;]:.2f} 秒&quot;)
+<a id="__codelineno-15-105" name="__codelineno-15-105"></a>      print(f&quot;平均處理速度: {stats[&#39;avg_tokens_per_sec&#39;]:.1f} ± {stats[&#39;std_tokens_per_sec&#39;]:.1f} 字元/秒&quot;)
+<a id="__codelineno-15-106" name="__codelineno-15-106"></a>
+<a id="__codelineno-15-107" name="__codelineno-15-107"></a>      *# 儲存結果*
+<a id="__codelineno-15-108" name="__codelineno-15-108"></a>      filename = f&quot;benchmark_{model.replace(&#39;:&#39;, &#39;_&#39;)}_{datetime.now().strftime(&#39;%Y%m%d_%H%M%S&#39;)}.json&quot;
+<a id="__codelineno-15-109" name="__codelineno-15-109"></a>      with open(filename, &#39;w&#39;) as f:
+<a id="__codelineno-15-110" name="__codelineno-15-110"></a>          json.dump({
+<a id="__codelineno-15-111" name="__codelineno-15-111"></a>              &#39;stats&#39;: stats,
+<a id="__codelineno-15-112" name="__codelineno-15-112"></a>              &#39;detailed_results&#39;: all_results
+<a id="__codelineno-15-113" name="__codelineno-15-113"></a>          }, f, indent=2)
+<a id="__codelineno-15-114" name="__codelineno-15-114"></a>
+<a id="__codelineno-15-115" name="__codelineno-15-115"></a>      print(f&quot;\n📁 詳細結果已儲存至: {filename}&quot;)
+<a id="__codelineno-15-116" name="__codelineno-15-116"></a>
+<a id="__codelineno-15-117" name="__codelineno-15-117"></a>      return stats
+<a id="__codelineno-15-118" name="__codelineno-15-118"></a>  else:
+<a id="__codelineno-15-119" name="__codelineno-15-119"></a>      print(&quot;❌ 所有測試都失敗了!&quot;)
+<a id="__codelineno-15-120" name="__codelineno-15-120"></a>      return None
+<a id="__codelineno-15-121" name="__codelineno-15-121"></a>
+<a id="__codelineno-15-122" name="__codelineno-15-122"></a>if __name__ == &quot;__main__&quot;:
+<a id="__codelineno-15-123" name="__codelineno-15-123"></a>  import sys
+<a id="__codelineno-15-124" name="__codelineno-15-124"></a>
+<a id="__codelineno-15-125" name="__codelineno-15-125"></a>  model = sys.argv[1] if len(sys.argv) &gt; 1 else &quot;llama2:7b&quot;
+<a id="__codelineno-15-126" name="__codelineno-15-126"></a>  iterations = int(sys.argv[2]) if len(sys.argv) &gt; 2 else 3
+<a id="__codelineno-15-127" name="__codelineno-15-127"></a>
+<a id="__codelineno-15-128" name="__codelineno-15-128"></a>  run_benchmark(model, iterations)
+</code></pre></div></td></tr></table></div>
+<hr />
+<ul>
+<li>
+<h2 id="_4">📚 腳本使用範例</h2>
+</li>
+<li>
+<h3 id="_5">日常使用工作流</h3>
+</li>
+</ul>
+<p>bash  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-16-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-16-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-16-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-16-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-16-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-16-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-16-10">10</a></span>
+<span class="normal"><a href="#__codelineno-16-11">11</a></span>
+<span class="normal"><a href="#__codelineno-16-12">12</a></span>
+<span class="normal"><a href="#__codelineno-16-13">13</a></span>
+<span class="normal"><a href="#__codelineno-16-14">14</a></span>
+<span class="normal"><a href="#__codelineno-16-15">15</a></span>
+<span class="normal"><a href="#__codelineno-16-16">16</a></span>
+<span class="normal"><a href="#__codelineno-16-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>*# 1. 每日健康檢查*
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a>python3 ~/system_health.py
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a>*# 2. 快速測試模型*
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a>python3 ~/quick_test.py llama2:7b &quot;今天天氣如何?&quot;
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a>*# 3. 管理模型*
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a>python3 ~/model_manager.py
+<a id="__codelineno-16-9" name="__codelineno-16-9"></a>
+<a id="__codelineno-16-10" name="__codelineno-16-10"></a>*# 4. 執行完整測試*
+<a id="__codelineno-16-11" name="__codelineno-16-11"></a>python3 ~/auto_test_framework.py
+<a id="__codelineno-16-12" name="__codelineno-16-12"></a>
+<a id="__codelineno-16-13" name="__codelineno-16-13"></a>*# 5. 效能基準測試*
+<a id="__codelineno-16-14" name="__codelineno-16-14"></a>python3 ~/benchmark.py llama2:7b 3
+<a id="__codelineno-16-15" name="__codelineno-16-15"></a>
+<a id="__codelineno-16-16" name="__codelineno-16-16"></a>*# 6. 生成報告*
+<a id="__codelineno-16-17" name="__codelineno-16-17"></a>python3 ~/html_reporter.py llm_test_log_*.json
+</code></pre></div></td></tr></table></div>
+- ### 自動化腳本</p>
+<p>bash  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-17-10">10</a></span>
+<span class="normal"><a href="#__codelineno-17-11">11</a></span>
+<span class="normal"><a href="#__codelineno-17-12">12</a></span>
+<span class="normal"><a href="#__codelineno-17-13">13</a></span>
+<span class="normal"><a href="#__codelineno-17-14">14</a></span>
+<span class="normal"><a href="#__codelineno-17-15">15</a></span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span>
+<span class="normal"><a href="#__codelineno-17-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>*# 建立每日檢查腳本*
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a>cat &gt; ~/daily_check.sh &lt;&lt; &#39;EOF&#39;
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a>#!/bin/bash
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a>echo &quot;🌅 每日 LLM 系統檢查 - $(date)&quot;
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a>echo &quot;==================================&quot;
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a># 健康檢查
+<a id="__codelineno-17-8" name="__codelineno-17-8"></a>python3 ~/system_health.py
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a>
+<a id="__codelineno-17-10" name="__codelineno-17-10"></a># 快速測試
+<a id="__codelineno-17-11" name="__codelineno-17-11"></a>echo -e &quot;\n🧪 快速功能測試:&quot;
+<a id="__codelineno-17-12" name="__codelineno-17-12"></a>python3 ~/quick_test.py llama2:7b &quot;Hello, test message&quot;
+<a id="__codelineno-17-13" name="__codelineno-17-13"></a>
+<a id="__codelineno-17-14" name="__codelineno-17-14"></a>echo -e &quot;\n📊 今日檢查完成!&quot;
+<a id="__codelineno-17-15" name="__codelineno-17-15"></a>EOF
+<a id="__codelineno-17-16" name="__codelineno-17-16"></a>
+<a id="__codelineno-17-17" name="__codelineno-17-17"></a>chmod +x ~/daily_check.sh
+</code></pre></div></td></tr></table></div>
+- ### 監控腳本</p>
+<p>bash  </p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span>
+<span class="normal"><a href="#__codelineno-18-17">17</a></span>
+<span class="normal"><a href="#__codelineno-18-18">18</a></span>
+<span class="normal"><a href="#__codelineno-18-19">19</a></span>
+<span class="normal"><a href="#__codelineno-18-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>*# 建立連續監控腳本*
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>cat &gt; ~/continuous_monitor.sh &lt;&lt; &#39;EOF&#39;
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a>#!/bin/bash
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a>echo &quot;📡 啟動連續監控模式...&quot;
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a>echo &quot;按 Ctrl+C 停止監控&quot;
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a>
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a>while true; do
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a>  clear
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a>  echo &quot;🔄 實時監控 - $(date)&quot;
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a>  echo &quot;==================================&quot;
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a>
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a>  # 系統狀態
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a>  python3 ~/system_health.py
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a>  echo -e &quot;\n⏰ 5秒後更新...&quot;
+<a id="__codelineno-18-16" name="__codelineno-18-16"></a>  sleep 5
+<a id="__codelineno-18-17" name="__codelineno-18-17"></a>done
+<a id="__codelineno-18-18" name="__codelineno-18-18"></a>EOF
+<a id="__codelineno-18-19" name="__codelineno-18-19"></a>
+<a id="__codelineno-18-20" name="__codelineno-18-20"></a>chmod +x ~/continuous_monitor.sh
+</code></pre></div></td></tr></table></div>
+<hr />
+<ul>
+<li>
+<h2 id="_6">🎯 總結</h2>
+</li>
+</ul>
+<p>這個完整的腳本集合提供了：<br />
+- ### ✅ 監控功能
+- GPU 即時監控
+- 系統資源監控
+- 健康狀態檢查
+- ### ✅ 測試功能
+- 快速測試
+- 詳細效能測試
+- 自動化測試框架
+- 基準測試
+- ### ✅ 管理功能
+- 模型管理
+- 結果記錄
+- 報告生成
+- ### ✅ 實用工具
+- 日常檢查腳本
+- 連續監控
+- 自動化工作流</p>
+<p><strong>所有腳本都經過實際測試，可以在你的 WSL2 + RTX 4070 環境中使用！</strong> 🚀</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到頂端
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u8907\u88fd", "clipboard.copy": "\u8907\u88fd", "search.result.more.one": "\u6b64\u9801\u5c1a\u6709 1 \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.more.other": "\u6b64\u9801\u5c1a\u6709 # \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.none": "\u6c92\u6709\u7b26\u5408\u7684\u9805\u76ee", "search.result.one": "\u627e\u5230 1 \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.other": "\u627e\u5230 # \u500b\u7b26\u5408\u7684\u9805\u76ee", "search.result.placeholder": "\u6253\u5b57\u9032\u884c\u641c\u5c0b", "search.result.term.missing": "\u7f3a\u5c11\u5b57\u8a5e", "select.version": "\u9078\u64c7\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
