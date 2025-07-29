@@ -1,5 +1,0 @@
-title: 📅 每日實作日誌
-icon: material/calendar-month
-files:
-  - day1.md: "🟦 Day 1：本地 LLM 環境建置初探"
-  - day2.md: "🟦 Day 2：本地 LLM 初探測試腳本集"
